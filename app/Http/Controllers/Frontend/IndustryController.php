@@ -19,34 +19,11 @@ class IndustryController extends Controller
             true
         );
 
-        // Find category
-        $industry = collect($categories)
-            ->firstWhere('slug', $slug);
-
-        abort_if(!$industry, 404);
-
-        // Get courses for this category
-        $categoryCourses = collect($courses)
-            ->where('category_slug', $slug)
-            ->values()
-            ->all();
-
-        $courseLevels = [
-            'All',
-            'Certificate II',
-            'Certificate III',
-            'Certificate IV',
-            'Diploma',
-            'Advance Diploma',
-            'Graduate Diploma',
-        ];
-
-        // return $categoryCourses;
+        
 
         return view('frontend.pages.industry.index', [
-            'industry' => $industry,
-            'courses' => $categoryCourses,
-            'courseLevels' => $courseLevels,
+            'industry' => $categories,
+            'courses' => $courses,
         ]);
     }
 

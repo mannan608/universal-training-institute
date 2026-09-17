@@ -1,4 +1,3 @@
-
 @extends('frontend.layouts.app')
 
 @section('content')
@@ -468,10 +467,8 @@
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
 
-
-            {{-- ====================================================
-                DISCIPLINE 1
-            ===================================================== --}}
+            {{-- Card 1 --}}
+          @foreach ($industries as $industry)
             <div
                 class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
 
@@ -479,13 +476,13 @@
                     class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
 
                     <img
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1V0vV_ZMek-smAsbHdRbBvWINOY7efDz99v-VEFNVUOXmRprtfpwh3-hKszhN0JSiZaBubRE1GBLmMP4bQa_sOkAr4Ysa0UNA6eyQAuUQ33-Z28F2uBo8_32udZ_-RsyVmewqr-Vq1yvfAu36SObl4Xc9krN00C_63eu55QrjeY3TQrh6MZdWaEqjXdTnd2_UMp1gI5re_iokW0EVMjI8ALFSmkgHXicAFVkgVO9wKSvXWctMHZGYX3BYVw"
-                        alt="Australian carpenter apprentice framing timber"
+                    src="{{ asset($industry['image']) }}"    
+                    alt="Australian carpenter apprentice framing timber"
                         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
                     <div
                         class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                        Trade & Structural
+                        {{$industry['short_name']}}
                     </div>
 
                     <div
@@ -502,12 +499,11 @@
 
                         <h3
                             class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Carpentry & Construction
+                            {{$industry['name']}}
                         </h3>
 
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Comprehensive practical trade qualifications. Train in structural framing, formwork,
-                            scaffolding and residential project regulations in our Parramatta warehouse hub.
+                        <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
+                            {{$industry['description']}}
                         </p>
 
                     </div>
@@ -531,7 +527,7 @@
 
 
                         <a
-                            href="#courses"
+                            href="{{ route('industries.index'), $industry['slug']}}"
                             class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
 
                             Explore Trade
@@ -547,193 +543,7 @@
                 </div>
 
             </div>
-
-
-            {{-- ====================================================
-                DISCIPLINE 2
-            ===================================================== --}}
-            <div
-                class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
-
-                <div
-                    class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
-
-                    <img
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1W27I1jDT4KCmT5NjIL63WLmq0u_qt3wOZixtj2IMBfDbJ9_NFvGJ8ygItJXj_mqK0VSpDFtHR6o_3BC51BfQaPN3z07ZTc56iDxkrFS-WMJRP3mbeAXW55OeRPKnNvXLHNsUYksgfn2siOH9Gvo_du2l8myEbKGHMpZByePM79CXXtvx0S_dnzCxW0K4mOXYdJt-jZ2MWMGMSEKx9Mtc3iaJApqe-t0yw4AhkIkQQjLhXp98VKurQhHKI"
-                        alt="Healthcare aged care nursing student with resident"
-                        class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
-
-                    <div
-                        class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                        Care & Community
-                    </div>
-
-                    <div
-                        class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-800">
-                        2 Qualifications
-                    </div>
-
-                </div>
-
-
-                <div class="flex flex-1 flex-col justify-between gap-6 p-6">
-
-                    <div class="flex flex-col gap-3">
-
-                        <h3
-                            class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Health & Aged Care
-                        </h3>
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Prepare for roles in Australia's growing care sector through simulated patient care
-                            environments and 120+ mandatory hours in accredited NSW aged care facilities.
-                        </p>
-
-                    </div>
-
-
-                    <div
-                        class="flex items-center justify-between border-t border-neutral-200 pt-5">
-
-                        <div>
-
-                            <span
-                                class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                Duration
-                            </span>
-
-                            <span class="font-mono text-xs font-bold text-neutral-900">
-                                52–104 Weeks
-                            </span>
-
-                        </div>
-
-
-                        <a
-                            href="#courses"
-                            class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
-
-                            Explore Health
-
-                            <span class="material-symbols-outlined text-sm">
-                                arrow_forward
-                            </span>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            {{-- ====================================================
-                DISCIPLINE 3
-            ===================================================== --}}
-            <div
-                class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
-
-                <div
-                    class="relative h-56 overflow-hidden bg-brand-500 p-5">
-
-                    <div class="flex items-center justify-between">
-
-                        <span
-                            class="rounded-md bg-secondary-300 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-brand-950">
-                            Enterprise & Ops
-                        </span>
-
-                        <span
-                            class="material-symbols-outlined text-3xl text-neutral-25">
-                            analytics
-                        </span>
-
-                    </div>
-
-
-                    <div
-                        class="absolute inset-x-5 bottom-5 rounded-lg bg-neutral-25 p-3">
-
-                        <div
-                            class="flex items-center justify-between border-b border-neutral-200 pb-2 font-mono text-[9px] text-neutral-600">
-
-                            <span>PROJECT_STAGE</span>
-
-                            <span class="font-bold text-secondary-600">
-                                100% KPI
-                            </span>
-
-                        </div>
-
-
-                        <div class="flex gap-1.5 pt-3">
-
-                            <div class="h-2 flex-1 rounded-sm bg-brand-500"></div>
-                            <div class="h-2 flex-1 rounded-sm bg-brand-500"></div>
-                            <div class="h-2 flex-1 rounded-sm bg-brand-500"></div>
-                            <div class="h-2 flex-1 rounded-sm bg-neutral-200"></div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="flex flex-1 flex-col justify-between gap-6 p-6">
-
-                    <div class="flex flex-col gap-3">
-
-                        <h3
-                            class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Business & Leadership
-                        </h3>
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Develop enterprise management, operational finance and project workflow skills for
-                            modern business environments and multidisciplinary teams in NSW.
-                        </p>
-
-                    </div>
-
-
-                    <div
-                        class="flex items-center justify-between border-t border-neutral-200 pt-5">
-
-                        <div>
-
-                            <span
-                                class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                Duration
-                            </span>
-
-                            <span class="font-mono text-xs font-bold text-neutral-900">
-                                52 Weeks
-                            </span>
-
-                        </div>
-
-
-                        <a
-                            href="#courses"
-                            class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
-
-                            Explore Business
-
-                            <span class="material-symbols-outlined text-sm">
-                                arrow_forward
-                            </span>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            @endforeach
         </div>
 
     </div>
@@ -1602,11 +1412,8 @@
                 </a>
 
             </div>
-
         </div>
-
     </div>
 
 </section>
-
 @endsection
