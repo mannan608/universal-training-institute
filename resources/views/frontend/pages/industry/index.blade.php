@@ -84,9 +84,9 @@
         <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
 
 
-            {{-- ====================================================
-                DISCIPLINE 1
-            ===================================================== --}}
+          @foreach ($courses as $course )
+              
+         
             <div
                 class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
 
@@ -94,13 +94,12 @@
                     class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
 
                     <img
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1V0vV_ZMek-smAsbHdRbBvWINOY7efDz99v-VEFNVUOXmRprtfpwh3-hKszhN0JSiZaBubRE1GBLmMP4bQa_sOkAr4Ysa0UNA6eyQAuUQ33-Z28F2uBo8_32udZ_-RsyVmewqr-Vq1yvfAu36SObl4Xc9krN00C_63eu55QrjeY3TQrh6MZdWaEqjXdTnd2_UMp1gI5re_iokW0EVMjI8ALFSmkgHXicAFVkgVO9wKSvXWctMHZGYX3BYVw"
-                        alt="Australian carpenter apprentice framing timber"
+                        src="{{ asset($course['image']) }}" alt="Australian carpenter apprentice framing timber"
                         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
                     <div
                         class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                        Trade
+                        {{ $course['hero']['badge'] }}
                     </div>
 
                 </div>
@@ -115,14 +114,14 @@
 
                             <span class="h-2 w-2 rounded-full bg-secondary-300"></span>
 
-                            Certificate III
+                            {{ $course['level'] }}
 
                         </span>
 
                         <span
                             class="inline-flex items-center rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-wide text-neutral-800">
 
-                           CPC3022
+                           {{ $course['code'] }}
 
                         </span>
 
@@ -132,12 +131,11 @@
 
                         <h3
                             class="font-display text-xl font-bold leading-tight tracking-tight text-brand-500">
-                            Certificate III in Carpentry
+                            {{ $course['name'] }}
                         </h3>
 
                         <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
-                            Comprehensive practical trade qualifications. Train in structural framing, formwork,
-                            scaffolding and residential project regulations in our Parramatta warehouse hub.
+                            {{ $course['hero']['description'] }}
                         </p>
 
                     </div>
@@ -154,7 +152,7 @@
                             </span>
 
                             <span class="font-mono text-xs font-bold text-neutral-900">
-                                1–2 Years
+                                {{$course['key_information']['duration']}}
                             </span>
 
                         </div>
@@ -172,6 +170,7 @@
                 </div>
 
             </div>
+             @endforeach
 
         </div>
 

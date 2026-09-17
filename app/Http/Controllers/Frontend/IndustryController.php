@@ -20,7 +20,7 @@ class IndustryController extends Controller
         );
 
         
-
+// return $courses;
         return view('frontend.pages.industry.index', [
             'industry' => $categories,
             'courses' => $courses,
