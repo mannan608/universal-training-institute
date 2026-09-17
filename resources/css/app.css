@@ -15,8 +15,9 @@
 
 @theme {
   --font-*: initial;
-  --font-sans: "Public Sans", sans-serif;
-  --font-outfit: "Public Sans", sans-serif;
+    --font-display: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
   --breakpoint-*: initial;
   --breakpoint-2xsm: 375px;
@@ -50,32 +51,32 @@
   --color-white: #ffffff;
   --color-black: #101828;
 
---color-brand-25:  #f4f8fe;
---color-brand-50:  #edf4fd;
---color-brand-100: #d9e8fa;
---color-brand-200: #b9d2f2;
---color-brand-300: #8eb5e6;
---color-brand-400: #5d91d4;
---color-brand-500: #0d52b5;
---color-brand-600: #0b4394;
---color-brand-700: #083372;
---color-brand-800: #062656;
---color-brand-900: #04193b;
---color-brand-950: #021126;
+--color-brand-25:  #f5f9fb;
+--color-brand-50:  #edf5f7;
+--color-brand-100: #dbeaf0;
+--color-brand-200: #bfd9e2;
+--color-brand-300: #99c0ce;
+--color-brand-400: #6f9faf;
+--color-brand-500: #245c73;
+--color-brand-600: #1f4f63;
+--color-brand-700: #193f50;
+--color-brand-800: #143340;
+--color-brand-900: #0e252f;
+--color-brand-950: #07171e;
 
 /* --#182F5A */
---color-secondary-25:  #f5fcff;
---color-secondary-50:  #effaff;
---color-secondary-100: #dff5fe;
---color-secondary-200: #bce9fd;
---color-secondary-300: #84d5fc;
---color-secondary-400: #45c1fa;
---color-secondary-500: #22b5ff;
---color-secondary-600: #0284c7;
---color-secondary-700: #0369a1;
---color-secondary-800: #075985;
---color-secondary-900: #0c4a6e;
---color-secondary-950: #082f49;
+--color-secondary-25:  #f5fafb;
+--color-secondary-50:  #eef7f8;
+--color-secondary-100: #dceff2;
+--color-secondary-200: #c0e1e6;
+--color-secondary-300: #99cbd2;
+--color-secondary-400: #6fb1bc;
+--color-secondary-500: #3f8c9e;
+--color-secondary-600: #36798a;
+--color-secondary-700: #2d6472;
+--color-secondary-800: #25515d;
+--color-secondary-900: #1d414a;
+--color-secondary-950: #10272d;
 
 
 
@@ -1133,3 +1134,29 @@ pre[class*='language-'] {
 .hero-gradient-overlay {
     background: linear-gradient(90deg, rgba(13, 82, 181, 0.94) 0%, rgba(9, 52, 117, 0.88) 45%, rgba(15, 23, 42, 0.78) 100%);
 }
+
+.mesh-background {
+    background:
+        radial-gradient(
+            at 15% 15%,
+            rgba(191, 217, 226, 0.65),
+            transparent 45%
+        ),
+        radial-gradient(
+            at 85% 5%,
+            rgba(153, 203, 210, 0.45),
+            transparent 45%
+        ),
+        radial-gradient(
+            at 10% 90%,
+            rgba(111, 177, 188, 0.28),
+            transparent 50%
+        ),
+        radial-gradient(
+            at 90% 85%,
+            rgba(36, 92, 115, 0.12),
+            transparent 45%
+        ),
+        #f5f9fb;
+}
+

@@ -1,166 +1,92 @@
- <!-- FOOTER -->
- <footer class="bg-slate-900 text-slate-400 pt-8 md:pt-16 pb-8 border-t border-slate-800">
-     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
-             <div class="col-span-2">
-                 <div class="flex items-center space-x-2 mb-4 -mt-5">
-                     <div class=" p-1.5">
-                         <a href="/">
-                             <img src="{{ asset('logo.png') }}" alt="logo" class="w-auto h-auto">
-                         </a>
-                     </div>
-                 </div>
-                 <p class="text-[15px] text-slate-400 max-w-sm leading-relaxed mb-6">
-                     <span class="font-bold"> Empower Your Career Through Recognition</span><br>
-
-                     Turn your valuable work experience into nationally recognized qualifications with Open School
-                     Education—no traditional study required. Get qualified, save time, and advance your career with
-                     confidence.
-                 </p>
-
-             </div>
-
-             <div>
-                 <h4 class="text-white text-base font-bold uppercase tracking-wider mb-4">About us</h4>
-                 <ul class="space-y-2 text-[15px]">
-                     <li><a href="{{ route('about') }}" class="hover:text-brand-400 transition">About Us</a></li>
-                     <li><a href="{{ route('faqs') }}" class="hover:text-brand-400 transition">FAQs</a></li>
-                     <li><a href="{{ route('patners') }}" class="hover:text-brand-400 transition">Our Partners</a></li>
-                     <li><a href="{{ route('terms-conditions')}}" class="hover:text-brand-400 transition">Terms and Conditions</a></li>
-                     <li><a href="{{ route('privacy-policy') }}" class="hover:text-brand-400 transition">Privacy Policy</a></li>
-                 </ul>
-             </div>
-
-             <div>
-                 <h4 class="text-white text-base font-bold uppercase tracking-wider mb-4">Quick Links</h4>
-                 <ul class="space-y-2 text-[15px]">
-                     <li><a href="#" class="hover:text-brand-400 transition">Early Childhood
-                             Care</a></li>
-                     <li><a href="#" class="hover:text-brand-400 transition">Individual Support</a>
-                     </li>
-                     <li><a href="#" class="hover:text-brand-400 transition">Community Service</a>
-                     </li>
-                     <li><a href="#" class="hover:text-brand-400 transition">Construction &
-                             Trade</a></li>
-                     <li><a href="#" class="hover:text-brand-400 transition">Tourism, Travel and
-                             Hospitality</a></li>
-                 </ul>
-             </div>
-
-             <div>
-                 <h4 class="text-white text-base font-bold uppercase tracking-wider mb-4">Get In Touch</h4>
-                 <ul class="space-y-2 text-[15px]">
-                     <li><a href="#" class="hover:text-brand-400 transition">Museum Tower, 603/267-277 Castlereagh
-                             St, Sydney NSW 2000, Australia</a></li>
-                     <li><a href="#" class="hover:text-brand-400 transition">+61 405 106 199</a></li>
-                     <li><a href="#" class="hover:text-brand-400 transition">info@openschooleducation.com</a></li>
-
-                 </ul>
-                 <div class="flex space-x-3 mt-3">
-                     <a href="#"
-                         class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition"><i
-                             class="fa-brands fa-facebook-f text-base"></i></a>
-                     <a href="#"
-                         class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition"><i
-                             class="fa-brands fa-twitter text-base"></i></a>
-                     <a href="#"
-                         class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition"><i
-                             class="fa-brands fa-instagram text-base"></i></a>
-                     <a href="#"
-                         class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition"><i
-                             class="fa-brands fa-linkedin-in text-base"></i></a>
-                 </div>
-             </div>
-         </div>
-
-         <div
-             class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-[15px] text-slate-500 gap-4">
-             <p class="text-center text-xs md:text-sm">© 2026 Universal Training Institute. All rights reserved. Registered
-                 CRICOS Advisory Partner.</p>
-             <div class="flex space-x-6 text-sm">
-                 <a href="#" class="hover:text-slate-300">Privacy Policy</a>
-                 <a href="#" class="hover:text-slate-300">Terms of Service</a>
-                 <a href="#" class="hover:text-slate-300">Contact Us</a>
-             </div>
-
-         </div>
-     </div>
- </footer>
-
- <script>
-     (function() {
-         const html = document.documentElement;
-         html.classList.add('scroll-smooth');
-
-         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-         const revealBaseClasses = ['opacity-0', 'translate-y-10', 'translate-x-10', '-translate-x-10',
-             'scale-95'
-         ];
-         const revealShownClasses = ['opacity-100', 'translate-y-0', 'translate-x-0', 'scale-100'];
-
-         const revealElement = (el) => {
-             el.classList.remove(...revealBaseClasses);
-             el.classList.add(...revealShownClasses);
-         };
-
-         const isElementInView = (el, offset = 0.12) => {
-             const rect = el.getBoundingClientRect();
-             const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-             return rect.top <= viewportHeight * (1 - offset) && rect.bottom >= 0;
-         };
-
-         const initRevealAnimations = () => {
-             const revealEls = document.querySelectorAll('.reveal-on-scroll');
-             if (!revealEls.length) return;
-
-             if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-                 revealEls.forEach(revealElement);
-                 return;
-             }
-
-             revealEls.forEach((el) => {
-                 if (isElementInView(el, 0.08)) {
-                     revealElement(el);
-                 }
-             });
-
-             const observer = new IntersectionObserver((entries) => {
-                 entries.forEach((entry) => {
-                     if (!entry.isIntersecting) return;
-                     revealElement(entry.target);
-                     observer.unobserve(entry.target);
-                 });
-             }, {
-                 threshold: 0.12,
-                 rootMargin: '0px 0px -10% 0px'
-             });
-
-             revealEls.forEach((el) => {
-                 if (el.classList.contains('opacity-100')) return;
-                 observer.observe(el);
-             });
-         };
-
-         const onReady = () => {
-             html.classList.add('scroll-smooth');
-             initRevealAnimations();
-         };
-
-         if (document.readyState === 'loading') {
-             document.addEventListener('DOMContentLoaded', onReady, {
-                 once: true
-             });
-         } else {
-             onReady();
-         }
-
-         window.addEventListener('pageshow', function(event) {
-             if (!event.persisted) return;
-             document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
-                 if (isElementInView(el, 0.1) || prefersReducedMotion) {
-                     revealElement(el);
-                 }
-             });
-         });
-     })();
- </script>
+    <!-- Comprehensive Footer -->
+    <footer class="w-full ">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b-2 border-brand-300">
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <div class="flex items-center gap-2">
+                       <a href="/" class="flex items-center gap-3 group font-semibold">
+                        <img src="{{ asset('site-logo.png') }}"  alt="Universal Training Institute" class="h-10 w-auto" width="123" height="114">
+                        <div class="hidden sm:block leading-tight">
+                            <div class="text-brand-600 text-lg">Universal Training</div>
+                            <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Institute</div>
+                        </div>
+                    </a>
+                    </div>
+                    <p class="text-sm text-[#40484c] max-w-md leading-relaxed">
+                        Universal Training Institute delivers accredited vocational training and pathway programs with
+                        rigorous academic integrity, hands-on workshop learning, and high-employability outcomes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <div
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            ASQA Regulated</div>
+                        <div
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            CRICOS 04111E</div>
+                        <div
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            RTO Provider 45975</div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4
+                        class="font-display font-bold text-base uppercase tracking-tight text-[#245c73] border-b-2 border-brand-300 pb-1">
+                        Disciplines
+                    </h4>
+                    <ul class="flex flex-col gap-1.5 font-mono text-sm">
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
+                                href="#pathways">Automotive &amp; Mechanical</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#pathways">Business
+                                &amp; Management</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
+                                href="#pathways">Information Technology</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
+                                href="#pathways">Community Services &amp; Health</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
+                                href="#pathways">Hospitality &amp; Cookery</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4
+                        class="font-display font-bold text-base uppercase tracking-tight text-[#245c73] border-b-2 border-brand-300 pb-1">
+                        Admissions
+                    </h4>
+                    <ul class="flex flex-col gap-1.5 font-mono text-sm">
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#courses">Course
+                                Finder</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#prospectus">Entry
+                                Requirements</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#prospectus">ESOS
+                                Framework &amp; Visas</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#courses">Academic
+                                Calendar 2025</a></li>
+                        <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
+                                href="#consultation">Consultation &amp; Tours</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4
+                        class="font-display font-bold text-base uppercase tracking-tight text-[#245c73] border-b-2 border-brand-300 pb-1">
+                        Sydney Campus
+                    </h4>
+                    <div class="flex flex-col gap-1 text-sm text-[#40484c]">
+                        <p><strong class="text-[#1a1c19]">Address:</strong> Level 1, 410 Church Street, Parramatta, NSW
+                            2150 Australia</p>
+                        <p><strong class="text-[#1a1c19]">Phone:</strong> +61 2 8677 3600</p>
+                        <p><strong class="text-[#1a1c19]">Email:</strong> admissions@uti.edu.au</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs text-[#40484c]">
+                <p>© 2025 Universal Training Institute (UTI) Pty Ltd. All Rights Reserved. National Provider No: 45975 |
+                    CRICOS: 04111E.</p>
+                <div class="flex items-center gap-4 uppercase">
+                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Student Handbook</a>
+                    <a class="hover:text-[#1a1c19] transition-colors" href="#">ESOS Compliance</a>
+                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Complaints &amp; Appeals</a>
+                </div>
+            </div>
+        </div>
+    </footer>

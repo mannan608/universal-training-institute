@@ -1,10 +1,7 @@
     @php
-    $categories = json_decode(
-        file_get_contents(resource_path('data/categories.json')),
-        true
-    );
-    // @dd($categories);
-@endphp
+        $categories = json_decode(file_get_contents(resource_path('data/categories.json')), true);
+        // @dd($categories);
+    @endphp
     <header class="fixed top-0 left-0 w-full z-50 border-0 md:border-b bg-white backdrop-blur-md dark:bg-neutral-900/95">
 
         <nav class="max-w-7xl mx-auto px-5 lg:px-8">
@@ -30,9 +27,13 @@
 
                 </button>
                 <!-- Logo -->
-                <div class=" p-1.5">
-                    <a href="/">
-                        <img src="{{ asset('logo.png') }}" alt="logo" class="w-auto h-auto">
+                <div class="p-1.5 flex items-center gap-2">
+                    <a href="/" class="flex items-center gap-3 group font-semibold">
+                        <img src="{{ asset('site-logo.png') }}"  alt="Universal Training Institute" class="h-10 w-auto" width="123" height="114">
+                        <div class="hidden sm:block leading-tight">
+                            <div class="text-brand-600 text-lg">Universal Training</div>
+                            <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Institute</div>
+                        </div>
                     </a>
                 </div>
 
@@ -62,7 +63,7 @@
                                 d="m19 9-7 7-7-7" />
                         </svg>
                     </a>
-                   
+
 
                     <!-- Dropdown menu -->
                     <div id="dropdownHover" class="z-10 hidden top-full left-0 w-210 rounded-md bg-white shadow-lg">
@@ -91,7 +92,7 @@
                         {{ request()->routeIs('how-we-works') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
                         after:absolute after:left-0 after:-bottom-1.5
                         after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
-                        How It Works
+                        International
                     </a>
                     {{-- patners --}}
                     <a href="{{ route('patners') }}"
@@ -99,7 +100,7 @@
                         {{ request()->routeIs('patners') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
                         after:absolute after:left-0 after:-bottom-1.5
                         after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
-                        Our Partners
+                        Students
                     </a>
 
                     {{-- contact --}}
@@ -108,17 +109,16 @@
                             {{ request()->routeIs('contact') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
                             after:absolute after:left-0 after:-bottom-1.5
                             after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
-                        Contact Us
+                        Agents
                     </a>
 
 
                 </div>
 
                 <div class="flex items-center gap-4 lg:gap-6">
-                    <!-- Right Side -->
                     <a href="{{ route('eligibility') }}"
                         class="hidden md:flex text-sm uppercase bg-brand-600 text-white px-4 py-2 lg:px-6 lg:py-2.5 rounded-lg font-medium hover:bg-brand-600 transition">
-                        Check Your Eligibility
+                        Get In Touch
                     </a>
                 </div>
             </div>

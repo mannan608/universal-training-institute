@@ -28,7 +28,7 @@
             {{-- Description --}}
             <p class="mx-auto mt-5 max-w-2xl text-sm text-neutral-500 sm:text-base">
 
-                Please review these Terms carefully before utilizing the services and operations offered by Open School
+                Please review these Terms carefully before utilizing the services and operations offered by Universal Training Institute
                 Education
                 Services.
 
@@ -330,7 +330,7 @@
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
-                                <span>Consultation fees (if applicable) are payable prior to initiating the Open School
+                                <span>Consultation fees (if applicable) are payable prior to initiating the Universal Training Institute
                                     Education application process.</span>
                             </li>
                             <li class="flex items-start gap-3">
