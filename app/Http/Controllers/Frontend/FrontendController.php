@@ -69,4 +69,8 @@ class FrontendController extends Controller
       public function faqs(){
         return view('frontend.pages.faq.index');
     }
+
+        public function internationalInquiry(){
+        return view('frontend.pages.international.index');
+    }
 }

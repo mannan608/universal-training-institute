@@ -2,8 +2,8 @@
  {
     "id": 1,
     "code": "CPC30220",
-    "category_slug": "trade-vocational",
-    "category_name": "Trade & Vocational",
+    "category_slug": "trade",
+    "category_name": "Trade",
     "level": "Certificate III",
     "name": "Certificate III in Carpentry",
     "slug": "cpc30220-certificate-iii-in-carpentry",
@@ -186,15 +186,27 @@
     "entry_requirements": [
         {
             "label": "Minimum age",
-            "value": "18 years at the time of enrolment."
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
         },
         {
             "label": "English language proficiency",
-            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
         },
         {
             "label": "Academic requirement",
-            "value": "Year 12 qualification or equivalent academic background."
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+                "text": "",
+                "url": ""
+            }
         }
     ],
 
@@ -245,24 +257,24 @@
 {
     "id": 2,
     "code": "CPC50220",
-    "category_slug": "trade-vocational",
-    "category_name": "Trade & Vocational",
+    "category_slug": "trade",
+    "category_name": "Trade",
     "level": "Diploma",
-    "name": "Diploma of Building & Construction",
+    "name": "Diploma of Building and Construction (Building)",
     "slug": "cpc50220-diploma-of-building-and-construction-building",
     "image": "/industry/trade-vocational/CPC50220.jpg",
 
     "hero": {
         "badge": "Trades",
         "course_code": "CPC50220",
-        "title": "Diploma of Building and Construction (Building)",
-        "description": "Develop the knowledge and practical skills required to work in building and construction, including structural principles, risk and financial management, estimating, contracts, contractor management and construction supervision."
+        "title": "Building and Construction",
+        "description": "Develop practical building and construction skills, including structural principles, risk management, estimating, contracts and construction supervision."
     },
 
     "key_information": {
         "duration": "52 weeks",
         "total_units": 27,
-        "mode_of_study": "20 hrs/week (mixed)",
+        "mode_of_study": "20 hrs/week",
         "cricos": "119994J",
         "national_code": "CPC50220"
     },
@@ -401,15 +413,28 @@
     "entry_requirements": [
         {
             "label": "Minimum age",
-            "value": "18 years at the time of enrolment."
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
+            
         },
         {
             "label": "English language proficiency",
-            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an.",
+            "link": {
+                "text": "equivalent accepted test recognized by the Department of Home Affairs",
+                "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+            }
         },
         {
             "label": "Academic requirement",
-            "value": "Year 12 qualification or equivalent academic background."
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+                "text": "",
+                "url": ""
+            }
         }
     ],
 
@@ -583,15 +608,27 @@
     "entry_requirements": [
         {
             "label": "Minimum age",
-            "value": "18 years at the time of enrolment."
+            "value": "18 years at the time of enrolment",
+            "link": {
+                "text": "",
+                "url": ""
+            }
         },
         {
             "label": "English language proficiency",
-            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
         },
         {
             "label": "Academic requirement",
-            "value": "Year 12 qualification or equivalent academic background."
+            "value": "Year 12 qualification or equivalent academic background",
+             "link": {
+                "text": "",
+                "url": ""
+            }
         }
     ],
 
@@ -599,9 +636,7 @@
         "mandatory": true,
         "hours": 120,
         "title": "Mandatory placement",
-        "description": "Students must complete a minimum of 120 hours of supervised work placement in an approved aged care setting, including residential, home or community-based environments.",
-        "purpose": "Placement provides hands-on experience supporting older people, applying person-centred care and consolidating skills learned in the classroom.",
-        "support": "UTI's Work Placement Coordinator will assist in arranging suitable host organisations and supervising progress against the Assessment Requirements of the units of competency."
+        "description": "To achieve this qualification, students must complete a minimum of 120 hours of supervised work placement in an approved aged care setting (residential, home or community based). Placement provides hands-on experience supporting older people, applying person-centred care, and consolidating skills learned in the classroom. UTI's Work Placement Coordinator will assist in arranging suitable host organisations and supervising progress against the Assessment Requirements of the units of competency."
     },
 
     "career_outcomes": [
@@ -779,15 +814,27 @@
     "entry_requirements": [
         {
             "label": "Minimum age",
-            "value": "18 years at the time of enrolment."
+            "value": "18 years at the time of enrolment",
+            "link": {
+        "text": "",
+        "url": ""
+      }
         },
         {
             "label": "English language proficiency",
-            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+            "value": "IELTS 6.0 with a minimum of 5.5 in each module, or ",
+            "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
         },
         {
             "label": "Academic requirement",
-            "value": "Year 12 qualification or equivalent academic background."
+            "value": "Year 12 qualification or equivalent academic background",
+            "link": {
+        "text": "",
+        "url": ""
+      }
         }
     ],
 
@@ -795,9 +842,8 @@
         "mandatory": true,
         "hours": 160,
         "title": "Mandatory placement",
-        "description": "Students must complete a minimum of 160 hours of supervised work placement in an approved mental health service.",
-        "purpose": "Placement provides an opportunity to apply recovery-oriented practice, trauma-informed care and collaborative service delivery with clients and care networks.",
-        "support": "UTI's Work Placement Coordinator will help arrange suitable host organisations and oversee progress against the Assessment Requirements of the units of competency."
+        "description": "To achieve this qualification, students must complete a minimum of 160 hours of supervised work placement in an approved mental health service. Placement allows students to apply recovery-oriented practice, trauma-informed care, and collaborative service delivery with real clients and care networks. UTI's Work Placement Coordinator will help arrange host organisations and oversee progress against the Assessment Requirements of the units of competency."
+       
     },
 
     "career_outcomes": [
@@ -932,15 +978,27 @@
   "entry_requirements": [
     {
       "label": "Minimum age",
-      "value": "18 years at the time of enrolment."
+      "value": "18 years at the time of enrolment",
+      "link": {
+        "text": "",
+        "url": ""
+      }
     },
     {
       "label": "English language proficiency",
-      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or ",
+      "link": {
+        "text": "equivalent test accepted by the Department of Home Affairs",
+        "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+      }
     },
     {
       "label": "Academic requirement",
-      "value": "Year 12 qualification or equivalent academic background."
+      "value": "Year 12 qualification or equivalent academic background",
+      "link": {
+        "text": "",
+        "url": ""
+      }
     }
   ],
   "career_outcomes": [
@@ -1061,15 +1119,27 @@
   "entry_requirements": [
     {
       "label": "Minimum age",
-      "value": "18 years at the time of enrolment."
+      "value": "18 years at the time of enrolment",
+      "link": {
+                "text": "",
+                "url": ""
+            }
     },
     {
       "label": "English language proficiency",
-      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs."
+      "value": "IELTS 6.0 with a minimum of 5.5 in each module, or an equivalent test accepted by the Department of Home Affairs",
+      "link": {
+                "text": "equivalent accepted test recognized by the Department of Home Affairs",
+                "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language"
+            }
     },
     {
       "label": "Academic requirement",
-      "value": "Year 12 qualification or equivalent academic background."
+      "value": "Year 12 qualification or equivalent academic background",
+      "link": {
+                "text": "",
+                "url": ""
+            }
     },
     {
       "label": "Course-specific prerequisite",

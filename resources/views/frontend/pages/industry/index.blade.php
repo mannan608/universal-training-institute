@@ -1,5 +1,8 @@
 @extends('frontend.layouts.app')
 
+@section('title', $category['name'] ?? 'Courses')
+
+
 @section('content')
     <section class="relative overflow-hidden bg-brand-25">
         {{-- Existing mesh background utility --}}
@@ -38,26 +41,12 @@
                         <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" />
                     </svg>
-                </a>
-
-
-                <div class="flex items-center gap-2 text-[10px] font-mono text-neutral-500 sm:ml-auto">
-                    <span class="h-2 w-2 rounded-full bg-success-500"></span>
-
-                    <span>
-                        Next intake starts:
-                        <strong class="text-neutral-900">May 12, 2025</strong>
-                    </span>
-                </div>
+                </a>            
 
             </div>
         </div>
     </section>
-
-
-    {{-- ================================================================
-    ACADEMIC DISCIPLINES
-================================================================ --}}
+    {{-- ACADEMIC DISCIPLINES--}}
 <section class="py-12 md:py-16 lg:py-20">
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -158,7 +147,7 @@
                         </div>
 
                         <a
-                            href="#courses"
+                            href="{{ route('course.show', ['courseslug' => $course['slug']]) }}"
                             class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
 
                             Details

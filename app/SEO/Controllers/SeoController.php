@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Storage;
 
 class SeoController extends Controller
 {
-    use CourseTrait, RouteDiscoveryTrait;
+    use  RouteDiscoveryTrait;
 
     public function index()
     {

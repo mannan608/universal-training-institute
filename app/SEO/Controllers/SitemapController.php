@@ -3,14 +3,13 @@
 namespace App\SEO\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Traits\CourseTrait;
 use App\Traits\RouteDiscoveryTrait;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
 class SitemapController extends Controller
 {
-        use CourseTrait, RouteDiscoveryTrait;
+        use  RouteDiscoveryTrait;
 
 
     public function generate()

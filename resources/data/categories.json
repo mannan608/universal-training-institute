@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Trade/Vocational",
-        "slug": "trade-vocational",
+        "name": "Trade",
+        "slug": "trade",
         "short_name": "Trade",
         "description": "Explore practical, industry-focused qualifications designed to recognise existing skills and experience across a range of trade and vocational industries.",
         "overview": "Turn your hands-on industry experience into a nationally recognised qualification through Recognition of Prior Learning (RPL). Universal Training Institute helps you identify suitable trade and vocational qualifications based on your existing skills, workplace experience and career goals. Your practical knowledge and industry experience may be assessed and recognised toward a formal qualification, helping you avoid repeating learning you already have.",
