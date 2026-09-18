@@ -11,7 +11,7 @@
             <div class="mb-10 flex flex-wrap items-center justify-between gap-4 sm:mb-12">
 
                 <a href="#"
-                    class="inline-flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-wider text-brand-700 transition-colors hover:text-brand-500">
+                    class="inline-flex items-center gap-2  text-[11px] font-semibold uppercase tracking-wider text-brand-700 transition-colors hover:text-brand-500">
                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" />
@@ -23,12 +23,12 @@
                 <div class="flex flex-wrap items-center gap-2">
 
                     <span
-                        class="inline-flex items-center rounded-full border border-brand-200 bg-white px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-700 shadow-sm">
+                        class="inline-flex items-center rounded-full border border-brand-200 bg-white px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-700 shadow-sm">
                         Discipline // Business
                     </span>
 
                     <span
-                        class="inline-flex items-center rounded-full border border-brand-700 bg-brand-500 px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm">
+                        class="inline-flex items-center rounded-full border border-brand-700 bg-brand-500 px-3 py-1.5  text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm">
                         National Code: BSB60120
                     </span>
 
@@ -40,7 +40,7 @@
             <div class="mb-10 max-w-4xl sm:mb-12">
 
                 <span
-                    class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
+                    class="mb-3 inline-block  text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
                     01 // Specification &amp; Outcomes
                 </span>
 
@@ -71,7 +71,7 @@
                 <div
                     class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
                     <div
-                        class="mb-2 flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-500">
+                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" />
@@ -93,7 +93,7 @@
                 <div
                     class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
                     <div
-                        class="mb-2 flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-500">
+                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
@@ -116,7 +116,7 @@
                 <div
                     class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
                     <div
-                        class="mb-2 flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-500">
+                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 00-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
@@ -139,7 +139,7 @@
                 <div
                     class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
                     <div
-                        class="mb-2 flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-500">
+                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
@@ -162,7 +162,7 @@
                 <div
                     class="col-span-2 group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 sm:col-span-1">
                     <div
-                        class="mb-2 flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-500">
+                        class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
@@ -208,7 +208,7 @@
                 </a>
 
 
-                <div class="flex items-center gap-2 text-[10px] font-mono text-neutral-500 sm:ml-auto">
+                <div class="flex items-center gap-2 text-[10px]  text-neutral-500 sm:ml-auto">
                     <span class="h-2 w-2 rounded-full bg-success-500"></span>
 
                     <span>
@@ -251,7 +251,7 @@
 
                         <div class="min-w-0">
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 01.0 // Qualification Scope
                             </span>
 
@@ -285,7 +285,7 @@
                         </div>
 
 
-                        <p class="border-t border-neutral-100 pt-3 font-mono text-[10px] leading-5 text-neutral-500">
+                        <p class="border-t border-neutral-100 pt-3  text-[10px] leading-5 text-neutral-500">
                             National Training Package: BSB Business Services Training Package • Status: Current • AQF
                             Equivalent: Level 6.
                         </p>
@@ -316,7 +316,7 @@
 
                             <div class="min-w-0">
                                 <span
-                                    class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                    class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                     02.0 // Curriculum Architecture
                                 </span>
 
@@ -329,7 +329,7 @@
 
 
                         <span
-                            class="hidden shrink-0 border border-brand-200 bg-brand-50 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-700 sm:inline-flex">
+                            class="hidden shrink-0 border border-brand-200 bg-brand-50 px-3 py-1  text-[10px] font-semibold uppercase tracking-wider text-brand-700 sm:inline-flex">
                             Total 10 Units
                         </span>
 
@@ -357,7 +357,7 @@
                                 Core Units (5 Required)
                             </h3>
 
-                            <span class="font-mono text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
+                            <span class=" text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
                                 Mandatory Units
                             </span>
 
@@ -379,12 +379,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-brand-700">
+                                        <span class=" text-[11px] font-semibold text-brand-700">
                                             BSBCRT611
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
+                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
                                             Core
                                         </span>
                                     </div>
@@ -409,12 +409,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-brand-700">
+                                        <span class=" text-[11px] font-semibold text-brand-700">
                                             BSBFIN601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
+                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
                                             Core
                                         </span>
                                     </div>
@@ -439,12 +439,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-brand-700">
+                                        <span class=" text-[11px] font-semibold text-brand-700">
                                             BSBOPS601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
+                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
                                             Core
                                         </span>
                                     </div>
@@ -469,12 +469,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-brand-700">
+                                        <span class=" text-[11px] font-semibold text-brand-700">
                                             BSBSUS601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
+                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
                                             Core
                                         </span>
                                     </div>
@@ -499,12 +499,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-brand-700">
+                                        <span class=" text-[11px] font-semibold text-brand-700">
                                             BSBTEC601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
+                                            class="rounded-full border border-neutral-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-neutral-600">
                                             Core
                                         </span>
                                     </div>
@@ -530,7 +530,7 @@
                                 Elective Units (5 Selected for Industry Specialisation)
                             </h3>
 
-                            <span class="font-mono text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
+                            <span class=" text-[10px] font-semibold uppercase tracking-wider text-neutral-500">
                                 Management Stream
                             </span>
 
@@ -552,12 +552,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-secondary-700">
+                                        <span class=" text-[11px] font-semibold text-secondary-700">
                                             BSBLDR601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
+                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
                                             Elective
                                         </span>
                                     </div>
@@ -582,12 +582,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-secondary-700">
+                                        <span class=" text-[11px] font-semibold text-secondary-700">
                                             BSBINS601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
+                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
                                             Elective
                                         </span>
                                     </div>
@@ -612,12 +612,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-secondary-700">
+                                        <span class=" text-[11px] font-semibold text-secondary-700">
                                             BSBSTR601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
+                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
                                             Elective
                                         </span>
                                     </div>
@@ -642,12 +642,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-secondary-700">
+                                        <span class=" text-[11px] font-semibold text-secondary-700">
                                             BSBTWK601
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
+                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
                                             Elective
                                         </span>
                                     </div>
@@ -672,12 +672,12 @@
 
                                 <div class="min-w-0 flex-1">
                                     <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-                                        <span class="font-mono text-[11px] font-semibold text-secondary-700">
+                                        <span class=" text-[11px] font-semibold text-secondary-700">
                                             BSBCMM511
                                         </span>
 
                                         <span
-                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
+                                            class="rounded-full border border-secondary-200 bg-white px-2 py-0.5  text-[9px] font-semibold uppercase tracking-wide text-secondary-700">
                                             Elective
                                         </span>
                                     </div>
@@ -713,7 +713,7 @@
 
                         <div>
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 03.0 // Prerequisites &amp; Eligibility
                             </span>
 
@@ -731,7 +731,7 @@
                         <div class="flex items-start gap-3">
 
                             <span
-                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50 font-mono text-[10px] font-bold text-brand-700">
+                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50  text-[10px] font-bold text-brand-700">
                                 1
                             </span>
 
@@ -752,7 +752,7 @@
                         <div class="flex items-start gap-3">
 
                             <span
-                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50 font-mono text-[10px] font-bold text-brand-700">
+                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50  text-[10px] font-bold text-brand-700">
                                 2
                             </span>
 
@@ -777,7 +777,7 @@
                         <div class="flex items-start gap-3">
 
                             <span
-                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50 font-mono text-[10px] font-bold text-brand-700">
+                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-brand-50  text-[10px] font-bold text-brand-700">
                                 3
                             </span>
 
@@ -799,7 +799,7 @@
                         <div class="flex items-start gap-3 rounded-xl border border-warning-200 bg-warning-50 p-4">
 
                             <span
-                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-warning-300 bg-warning-100 font-mono text-[10px] font-bold text-warning-800">
+                                class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-warning-300 bg-warning-100  text-[10px] font-bold text-warning-800">
                                 !
                             </span>
 
@@ -844,7 +844,7 @@
 
                         <div>
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 04.0 // Vocational Horizons
                             </span>
 
@@ -871,7 +871,7 @@
                             </span>
 
                             <span
-                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1 font-mono text-[9px] text-neutral-600">
+                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1  text-[9px] text-neutral-600">
                                 ANZSCO 139914
                             </span>
                         </div>
@@ -884,7 +884,7 @@
                             </span>
 
                             <span
-                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1 font-mono text-[9px] text-neutral-600">
+                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1  text-[9px] text-neutral-600">
                                 ANZSCO 224711
                             </span>
                         </div>
@@ -897,7 +897,7 @@
                             </span>
 
                             <span
-                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1 font-mono text-[9px] text-neutral-600">
+                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1  text-[9px] text-neutral-600">
                                 ANZSCO 111211
                             </span>
                         </div>
@@ -910,7 +910,7 @@
                             </span>
 
                             <span
-                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1 font-mono text-[9px] text-neutral-600">
+                                class="shrink-0 border border-neutral-200 bg-white px-2 py-1  text-[9px] text-neutral-600">
                                 ANZSCO 224712
                             </span>
                         </div>
@@ -939,7 +939,7 @@
 
                         <div>
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 05.0 // Higher Education Articulation
                             </span>
 
@@ -993,7 +993,7 @@
 
                         <div>
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 06.0 // Accreditation Recognition
                             </span>
 
@@ -1018,7 +1018,7 @@
                         </p>
 
                         <p
-                            class="rounded-r-lg border-l-2 border-neutral-300 bg-neutral-50 px-3 py-2.5 font-mono text-[10px] leading-5 text-neutral-500">
+                            class="rounded-r-lg border-l-2 border-neutral-300 bg-neutral-50 px-3 py-2.5  text-[10px] leading-5 text-neutral-500">
                             Note: Students who complete some but not all units may be issued with an official Statement of
                             Attainment detailing competencies achieved.
                         </p>
@@ -1046,7 +1046,7 @@
 
                         <div>
                             <span
-                                class="block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                                class="block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                                 07.0 // Prior Learning Assessment
                             </span>
 
@@ -1082,7 +1082,7 @@
                 <article class="rounded-2xl border border-dashed border-brand-200 bg-brand-25 p-6" data-purpose="additional-info">
 
                     <div
-                        class="mb-2 flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-wider text-brand-600">
+                        class="mb-2 flex items-center gap-2  text-[10px] font-semibold uppercase tracking-wider text-brand-600">
 
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
@@ -1125,7 +1125,7 @@
 
                     <div class="mb-5 flex items-center justify-between border-b border-neutral-200 pb-3">
 
-                        <span class="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-secondary-600">
+                        <span class=" text-[10px] font-semibold uppercase tracking-[0.14em] text-secondary-600">
                             Get Started
                         </span>
 
@@ -1155,7 +1155,7 @@
                         <div>
 
                             <label
-                                class="mb-1.5 block font-mono text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Full Legal Name *
                             </label>
 
@@ -1169,7 +1169,7 @@
                         <div>
 
                             <label
-                                class="mb-1.5 block font-mono text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Email Address *
                             </label>
 
@@ -1183,7 +1183,7 @@
                         <div>
 
                             <label
-                                class="mb-1.5 block font-mono text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
+                                class="mb-1.5 block  text-[10px] font-semibold uppercase tracking-wide text-neutral-700">
                                 Residency Status *
                             </label>
 
@@ -1220,7 +1220,7 @@
 
 
                     <div
-                        class="mt-5 flex items-center justify-between gap-3 border-t border-neutral-100 pt-4 font-mono text-[10px] text-neutral-500">
+                        class="mt-5 flex items-center justify-between gap-3 border-t border-neutral-100 pt-4  text-[10px] text-neutral-500">
                         <span>Direct phone enquiry:</span>
 
                         <a href="tel:+61286773600" class="font-semibold text-neutral-900 transition-colors hover:text-brand-500">
@@ -1237,7 +1237,7 @@
                 <div class="rounded-2xl border border-brand-100 bg-brand-25 p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-0.5 hover:shadow-theme-sm" data-purpose="course-brochure-card">
 
                     <span
-                        class="mb-1 block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
+                        class="mb-1 block  text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
                         Document Archive
                     </span>
 
@@ -1254,7 +1254,7 @@
                     <div class="grid grid-cols-2 gap-2">
 
                         <button type="button"
-                            class="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-3 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-wide text-neutral-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-700 hover:shadow-theme-xs">
+                            class="flex items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-3 py-2.5  text-[10px] font-semibold uppercase tracking-wide text-neutral-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-brand-50 hover:text-brand-700 hover:shadow-theme-xs">
                             <svg class="h-3.5 w-3.5 text-brand-500" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"
@@ -1270,7 +1270,7 @@
 
 
                         <button type="button"
-                            class="flex items-center justify-center gap-1.5 rounded-lg border border-brand-700 bg-brand-700 px-3 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-theme-xs">
+                            class="flex items-center justify-center gap-1.5 rounded-lg border border-brand-700 bg-brand-700 px-3 py-2.5  text-[10px] font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-theme-xs">
                             <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l4 4m0 0l4-4m-4 4V4"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
@@ -1282,7 +1282,7 @@
                     </div>
 
 
-                    <span class="mt-3 block text-center font-mono text-[9px] text-neutral-400">
+                    <span class="mt-3 block text-center  text-[9px] text-neutral-400">
                         File size: 3.4 MB • Updated Jan 2025
                     </span>
 
@@ -1301,7 +1301,7 @@
                         </h4>
 
                         <span
-                            class="rounded-full border border-brand-200 bg-brand-50 px-2.5 py-1 font-mono text-[9px] font-semibold text-brand-700">
+                            class="rounded-full border border-brand-200 bg-brand-50 px-2.5 py-1  text-[9px] font-semibold text-brand-700">
                             AQF 6
                         </span>
 
@@ -1311,29 +1311,29 @@
                     <dl class="divide-y divide-neutral-200 text-xs">
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 National Code
                             </dt>
 
-                            <dd class="font-mono font-semibold text-neutral-900">
+                            <dd class=" font-semibold text-neutral-900">
                                 BSB60120
                             </dd>
                         </div>
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 CRICOS Code
                             </dt>
 
-                            <dd class="font-mono font-semibold text-neutral-900">
+                            <dd class=" font-semibold text-neutral-900">
                                 112668B
                             </dd>
                         </div>
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Duration
                             </dt>
 
@@ -1344,7 +1344,7 @@
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Total Units
                             </dt>
 
@@ -1355,7 +1355,7 @@
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Mode of Study
                             </dt>
 
@@ -1366,7 +1366,7 @@
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Study Discipline
                             </dt>
 
@@ -1377,7 +1377,7 @@
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Location
                             </dt>
 
@@ -1388,7 +1388,7 @@
 
 
                         <div class="flex justify-between gap-4 py-2.5">
-                            <dt class="font-mono text-neutral-500">
+                            <dt class=" text-neutral-500">
                                 Installment Plan
                             </dt>
 
@@ -1401,7 +1401,7 @@
 
 
                     <div
-                        class="mt-4 border border-brand-200 bg-brand-25 p-3 font-mono text-[10px] leading-5 text-brand-700">
+                        class="mt-4 border border-brand-200 bg-brand-25 p-3  text-[10px] leading-5 text-brand-700">
                         ★ Scholarships available for eligible onshore international applications.
                     </div>
 

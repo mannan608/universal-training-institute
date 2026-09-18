@@ -260,7 +260,7 @@
     cursor: pointer;
   }
   body {
-    @apply relative font-normal font-sans z-1 bg-neutral-50;
+    @apply relative font-normal z-1 bg-neutral-50;
   }
 
   button,

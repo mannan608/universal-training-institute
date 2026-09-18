@@ -13,14 +13,14 @@ class FrontendController extends Controller
 
     public function homePage()
     {
-          $industries = json_decode(
+          $categories = json_decode(
             File::get(resource_path('data/categories.json')),
             true
         );
 
-        // return $industries;
+        // return $categories;
 
-        return view('frontend.pages.home.home', compact('industries'));
+        return view('frontend.pages.home.home', compact('categories'));
     }
 
     public function aboutPage()

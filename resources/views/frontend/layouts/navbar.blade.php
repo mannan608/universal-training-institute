@@ -73,7 +73,7 @@
 
                             @foreach ($categories as $category)
                                 <li class="max-w-[90%]">
-                                    <a href="{{ route('industries.index', $category['slug']) }}"
+                                    <a href="{{ route('category-courses', ['categoryslug' => $category['slug']])}}"
                                         class="block w-full rounded-md p-2 normal-case text-gray-700
                            transition-colors hover:bg-gray-100 hover:text-brand-600">
 

@@ -47,7 +47,7 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 45631
                         </span>
                     </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 46027
                         </span>
                     </div>
@@ -95,11 +95,11 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 46027
                         </span>
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700  text-xs font-semibold">
                             CRICOS: 04149B
                         </span>
                     </div>
@@ -123,11 +123,11 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 46359
                         </span>
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700  text-xs font-semibold">
                             CRICOS: 04347G
                         </span>
                     </div>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 31518
                         </span>
                     </div>
@@ -175,11 +175,11 @@
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-center gap-2">
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-100 text-slate-700  text-xs font-semibold">
                             RTO: 41487
                         </span>
                         <span
-                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-mono text-xs font-semibold">
+                            class="inline-flex items-center px-2.5 py-1 rounded-md bg-blue-50 text-blue-700  text-xs font-semibold">
                             CRICOS: 03714G
                         </span>
                     </div>

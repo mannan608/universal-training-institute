@@ -7,7 +7,27 @@ use Illuminate\Support\Facades\File;
 
 class IndustryController extends Controller
 {
-    public function index(string $slug)
+    public function index()
+    {
+        $categories = json_decode(
+            File::get(resource_path('data/categories.json')),
+            true
+        );
+
+        $courses = json_decode(
+            File::get(resource_path('data/courses.json')),
+            true
+        );
+
+        
+// return $courses;
+        return view('frontend.pages.industry.index', [
+            'industry' => $categories,
+            'courses' => $courses,
+        ]);
+    }
+
+      public function categoryCourses(string $slug)
     {
         $categories = json_decode(
             File::get(resource_path('data/categories.json')),

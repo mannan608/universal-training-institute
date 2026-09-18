@@ -18,13 +18,13 @@
                     </p>
                     <div class="flex flex-wrap gap-2 pt-1">
                         <div
-                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded  text-[10px] uppercase font-bold">
                             ASQA Regulated</div>
                         <div
-                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded  text-[10px] uppercase font-bold">
                             CRICOS 04111E</div>
                         <div
-                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded font-mono text-[10px] uppercase font-bold">
+                            class="px-2.5 py-1 bg-white border-2 border-brand-300 rounded  text-[10px] uppercase font-bold">
                             RTO Provider 45975</div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         class="font-display font-bold text-base uppercase tracking-tight text-[#245c73] border-b-2 border-brand-300 pb-1">
                         Disciplines
                     </h4>
-                    <ul class="flex flex-col gap-1.5 font-mono text-sm">
+                    <ul class="flex flex-col gap-1.5  text-sm">
                         <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a
                                 href="#pathways">Automotive &amp; Mechanical</a></li>
                         <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#pathways">Business
@@ -51,7 +51,7 @@
                         class="font-display font-bold text-base uppercase tracking-tight text-[#245c73] border-b-2 border-brand-300 pb-1">
                         Admissions
                     </h4>
-                    <ul class="flex flex-col gap-1.5 font-mono text-sm">
+                    <ul class="flex flex-col gap-1.5  text-sm">
                         <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#courses">Course
                                 Finder</a></li>
                         <li class="text-[#40484c] hover:text-[#1a1c19] transition-colors"><a href="#prospectus">Entry
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div
-                class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs text-[#40484c]">
+                class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4  text-xs text-[#40484c]">
                 <p>© 2025 Universal Training Institute (UTI) Pty Ltd. All Rights Reserved. National Provider No: 45975 |
                     CRICOS: 04111E.</p>
                 <div class="flex items-center gap-4 uppercase">

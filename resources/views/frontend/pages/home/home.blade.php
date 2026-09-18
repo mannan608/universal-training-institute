@@ -20,7 +20,7 @@
                         <div class="flex flex-wrap items-center gap-2">
 
                             <span
-                                class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-wide text-neutral-25">
+                                class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-25">
 
                                 <span class="h-2 w-2 rounded-full bg-secondary-300"></span>
 
@@ -29,7 +29,7 @@
                             </span>
 
                             <span
-                                class="inline-flex items-center rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-wide text-neutral-800">
+                                class="inline-flex items-center rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-800">
 
                                 RTO 45975
 
@@ -82,7 +82,7 @@
 
                             {{-- Primary CTA --}}
                             <a href="#courses"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-500 px-6 py-3 font-mono text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-500 px-6 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                                 Browse All Courses
 
@@ -95,7 +95,7 @@
 
                             {{-- Secondary CTA --}}
                             <a href="#prospectus"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-brand-500 bg-neutral-25 px-6 py-3 font-mono text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
+                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-brand-500 bg-neutral-25 px-6 py-3  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
 
                                 <span class="material-symbols-outlined text-lg">
                                     menu_book
@@ -119,7 +119,7 @@
 
                                 <div class="flex flex-col gap-0.5">
 
-                                    <span class="font-mono text-[11px] font-bold uppercase tracking-wide text-neutral-900">
+                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
                                         Nationally Recognised
                                     </span>
 
@@ -140,7 +140,7 @@
 
                                 <div class="flex flex-col gap-0.5">
 
-                                    <span class="font-mono text-[11px] font-bold uppercase tracking-wide text-neutral-900">
+                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
                                         Work Placements
                                     </span>
 
@@ -196,7 +196,7 @@
                                 40:60
                             </span>
 
-                            <span class="font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-600">
+                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
                                 Theory / Hands-on
                             </span>
 
@@ -209,7 +209,7 @@
                                 100%
                             </span>
 
-                            <span class="font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-600">
+                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
                                 ASQA Compliant
                             </span>
 
@@ -222,7 +222,7 @@
                                 AUST
                             </span>
 
-                            <span class="font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-600">
+                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
                                 Government Code
                             </span>
 
@@ -255,7 +255,7 @@
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-neutral-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
                             Accreditation
                         </span>
 
@@ -269,7 +269,7 @@
                             12+
                         </span>
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wide text-secondary-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
                             Nationally Accredited
                         </span>
 
@@ -288,7 +288,7 @@
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-neutral-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
                             Location
                         </span>
 
@@ -302,7 +302,7 @@
                             01
                         </span>
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wide text-secondary-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
                             Sydney Campus
                         </span>
 
@@ -321,7 +321,7 @@
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-neutral-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
                             Industry Sectors
                         </span>
 
@@ -335,7 +335,7 @@
                             03
                         </span>
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wide text-secondary-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
                             High-Demand Hubs
                         </span>
 
@@ -354,7 +354,7 @@
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-neutral-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
                             Visa Status
                         </span>
 
@@ -368,7 +368,7 @@
                             100%
                         </span>
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-wide text-secondary-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
                             CRICOS Student Visa
                         </span>
 
@@ -404,7 +404,7 @@
 
                 <div>
 
-                    <span class="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
+                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
                         01 Academic Disciplines
                     </span>
 
@@ -416,8 +416,8 @@
                 </div>
 
 
-                <a href="#prospectus"
-                    class="inline-flex items-center gap-1.5 self-start font-mono text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
+                <a href="{{ route('courses.index') }}"
+                    class="inline-flex items-center gap-1.5 self-start  text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
 
                     All Disciplines
 
@@ -433,22 +433,22 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
 
                 {{-- Card 1 --}}
-                @foreach ($industries as $industry)
+                @foreach ($categories as $category)
                     <div
                         class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
 
                         <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
 
-                            <img src="{{ asset($industry['image']) }}" alt="Australian carpenter apprentice framing timber"
+                            <img src="{{ asset($category['image']) }}" alt="Australian carpenter apprentice framing timber"
                                 class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
                             <div
-                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                                {{ $industry['short_name'] }}
+                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                                {{ $category['short_name'] }}
                             </div>
 
                             <div
-                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-800">
+                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1  text-[9px] font-bold uppercase tracking-wide text-neutral-800">
                                 2 Qualifications
                             </div>
 
@@ -461,11 +461,11 @@
 
                                 <h3
                                     class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                                    {{ $industry['name'] }}
+                                    {{ $category['name'] }}
                                 </h3>
 
                                 <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
-                                    {{ $industry['description'] }}
+                                    {{ $category['description'] }}
                                 </p>
 
                             </div>
@@ -476,19 +476,19 @@
                                 <div>
 
                                     <span
-                                        class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                        class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                         Duration
                                     </span>
 
-                                    <span class="font-mono text-xs font-bold text-neutral-900">
+                                    <span class=" text-xs font-bold text-neutral-900">
                                         1–2 Years
                                     </span>
 
                                 </div>
 
 
-                                <a href="{{ route('industries.index', ['slug' => $industry['slug']]) }}"
-                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
+                                <a href="{{ route('category-courses', ['categoryslug' => $category['slug']]) }}"
+                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
 
                                     Explore Trade
 
@@ -510,6 +510,117 @@
     </section>
 
 
+    <section class="bg-brand-100 py-16 px-6 lg:px-12 text-[#1C2826] font-sans antialiased">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+        {{-- Column 1: Trade --}}
+        <div class="space-y-4">
+            <div class="relative">              
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Trade</h2>
+                    <p class="text-sm text-slate-600 mt-2 font-light">
+                        Hands-on construction & building qualifications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-1 pt-4">
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Certificate III in Carpentry</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CPC30220</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Building and Construction</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CPC50220</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        {{-- Column 2: Health --}}
+        <div class="space-y-4">
+            <div class="relative">
+               
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Health</h2>
+                    <p class="text-sm text-slate-600 mt-2 font-light">
+                        Care, ageing and mental health pathways.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-1 pt-4">
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Certificate IV in Ageing Support</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CHC43015</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Mental Health</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CHC53315</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        {{-- Column 3: Business --}}
+        <div class="space-y-4">
+            <div class="relative">
+              
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Business</h2>
+                    <p class="text-sm text-slate-600 mt-2 font-light">
+                        Leadership, management and enterprise skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-1 pt-4">
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Business</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">BSB50120</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+
+                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
+                    <div>
+                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Advanced Diploma of Business</h3>
+                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">BSB60120</span>
+                    </div>
+                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
     {{-- ================================================================
     MOST-ENROLLED QUALIFICATIONS
 ================================================================ --}}
@@ -522,7 +633,7 @@
 
                 <div>
 
-                    <span class="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
+                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
                         02 Intake Selection 2025
                     </span>
 
@@ -541,12 +652,12 @@
                 <div class="flex flex-wrap items-center gap-2">
 
                     <span
-                        class="rounded-lg border border-neutral-200 bg-neutral-25 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-700">
+                        class="rounded-lg border border-neutral-200 bg-neutral-25 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-700">
                         Term 2: May 2025
                     </span>
 
                     <span
-                        class="rounded-lg bg-brand-500 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                        class="rounded-lg bg-brand-500 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
                         Term 3: Jul 2025
                     </span>
 
@@ -568,12 +679,12 @@
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-secondary-600">
+                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
                                 National Code: CPC30220
                             </span>
 
                             <span
-                                class="rounded-md bg-success-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-success-700">
+                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
                                 Work Placement Included
                             </span>
 
@@ -596,11 +707,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Duration
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     104 Weeks
                                 </span>
 
@@ -610,11 +721,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Location
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Sydney Campus
                                 </span>
 
@@ -624,11 +735,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Tuition Schedule
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Quarterly
                                 </span>
 
@@ -642,12 +753,12 @@
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class="font-mono text-[10px] text-neutral-500">
+                        <span class=" text-[10px] text-neutral-500">
                             CRICOS CODE: 108342M
                         </span>
 
                         <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -672,12 +783,12 @@
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-secondary-600">
+                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
                                 National Code: CPC50220
                             </span>
 
                             <span
-                                class="rounded-md bg-warning-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-warning-700">
+                                class="rounded-md bg-warning-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-warning-700">
                                 Contractor Pathway
                             </span>
 
@@ -700,11 +811,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Duration
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     52 Weeks
                                 </span>
 
@@ -714,11 +825,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Prerequisites
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Year 12 / Eq.
                                 </span>
 
@@ -728,11 +839,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Career
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Site Manager
                                 </span>
 
@@ -746,12 +857,12 @@
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class="font-mono text-[10px] text-neutral-500">
+                        <span class=" text-[10px] text-neutral-500">
                             CRICOS CODE: 108343K
                         </span>
 
                         <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -776,12 +887,12 @@
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-secondary-600">
+                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
                                 National Code: CHC43015
                             </span>
 
                             <span
-                                class="rounded-md bg-success-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-success-700">
+                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
                                 120 Hrs Placement
                             </span>
 
@@ -804,11 +915,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Duration
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     52 Weeks
                                 </span>
 
@@ -818,11 +929,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Practicum
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     120 Hours
                                 </span>
 
@@ -832,11 +943,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Demand
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-secondary-600">
+                                <span class=" text-xs font-bold text-secondary-600">
                                     Very High
                                 </span>
 
@@ -850,12 +961,12 @@
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class="font-mono text-[10px] text-neutral-500">
+                        <span class=" text-[10px] text-neutral-500">
                             CRICOS CODE: 104556C
                         </span>
 
                         <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -880,12 +991,12 @@
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class="font-mono text-[10px] font-bold uppercase tracking-wider text-secondary-600">
+                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
                                 National Code: CHC53315
                             </span>
 
                             <span
-                                class="rounded-md bg-secondary-50 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wide text-secondary-700">
+                                class="rounded-md bg-secondary-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-secondary-700">
                                 Clinical Simulation
                             </span>
 
@@ -908,11 +1019,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Duration
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     78 Weeks
                                 </span>
 
@@ -922,11 +1033,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Assessment
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Portfolio + Lab
                                 </span>
 
@@ -936,11 +1047,11 @@
                             <div>
 
                                 <span
-                                    class="block font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Delivery
                                 </span>
 
-                                <span class="font-mono text-xs font-bold text-neutral-900">
+                                <span class=" text-xs font-bold text-neutral-900">
                                     Face-to-Face
                                 </span>
 
@@ -954,12 +1065,12 @@
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class="font-mono text-[10px] text-neutral-500">
+                        <span class=" text-[10px] text-neutral-500">
                             CRICOS CODE: 104557B
                         </span>
 
                         <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -998,13 +1109,13 @@
 
                     <div class="flex flex-wrap items-center gap-2">
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-secondary-600">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-secondary-600">
                             Documentation & Intakes
                         </span>
 
                         <span class="text-neutral-400">/</span>
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-neutral-700">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-700">
                             2025 Calendar
                         </span>
 
@@ -1079,7 +1190,7 @@
 
 
                 <div
-                    class="flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-brand-200 pt-5 font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-600">
+                    class="flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-brand-200 pt-5  text-[9px] font-bold uppercase tracking-wide text-neutral-600">
 
                     <div class="flex items-center gap-1.5">
 
@@ -1126,7 +1237,7 @@
                             Instant Access
                         </span>
 
-                        <p class="mt-1 font-mono text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                        <p class="mt-1  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                             Direct dispatch to your primary inbox
                         </p>
 
@@ -1137,12 +1248,12 @@
                     <div class="flex flex-col gap-2">
 
                         <label for="full-name"
-                            class="font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Full Legal Name *
                         </label>
 
                         <input id="full-name" type="text" required placeholder="e.g. Alex Henderson"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5 font-mono text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
+                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
 
                     </div>
 
@@ -1151,12 +1262,12 @@
                     <div class="flex flex-col gap-2">
 
                         <label for="email"
-                            class="font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Email Address *
                         </label>
 
                         <input id="email" type="email" required placeholder="name@example.com"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5 font-mono text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
+                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
 
                     </div>
 
@@ -1165,12 +1276,12 @@
                     <div class="flex flex-col gap-2">
 
                         <label for="area-interest"
-                            class="font-mono text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Area of Interest *
                         </label>
 
                         <select id="area-interest" required
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5 font-mono text-sm text-neutral-900 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10">
+                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10">
 
                             <option value="">
                                 Select study stream...
@@ -1214,7 +1325,7 @@
 
                     {{-- Submit --}}
                     <button type="submit"
-                        class="mt-1 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-brand-500 px-4 py-3 font-mono text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        class="mt-1 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-brand-500 px-4 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                         Download Course Booklet (PDF)
 
@@ -1261,7 +1372,7 @@
                         </span>
 
 
-                        <span class="font-mono text-[10px] font-bold uppercase tracking-widest text-secondary-300">
+                        <span class=" text-[10px] font-bold uppercase tracking-widest text-secondary-300">
                             Admissions Advisors On Call
                         </span>
 
@@ -1289,7 +1400,7 @@
                     {{-- Phone --}}
                     <div class="rounded-xl border border-brand-500 bg-brand-900 px-5 py-3 text-center">
 
-                        <span class="block font-mono text-[9px] font-bold uppercase tracking-widest text-brand-200">
+                        <span class="block  text-[9px] font-bold uppercase tracking-widest text-brand-200">
                             Direct Sydney Line
                         </span>
 
@@ -1302,7 +1413,7 @@
 
                     {{-- Campus tour --}}
                     <a href="#prospectus"
-                        class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3 font-mono text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
+                        class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3  text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
 
                         Book Free Campus Tour
 

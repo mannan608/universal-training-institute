@@ -81,7 +81,7 @@
 
                 <!-- Top Left Course Badge -->
                 <div class="absolute top-4 left-4 z-10">
-                    <span class="px-3 py-1 bg-white rounded text-brand-950 font-mono text-xs uppercase font-bold tracking-wider">
+                    <span class="px-3 py-1 bg-white rounded text-brand-950  text-xs uppercase font-bold tracking-wider">
                         {{ $slide['badge'] }}
                     </span>
                 </div>
@@ -95,7 +95,7 @@
                         </span>
 
                         <div class="flex flex-col">
-                            <span class="font-mono text-xs uppercase font-bold">
+                            <span class=" text-xs uppercase font-bold">
                                 {{ $slide['location'] }}
                             </span>
 
