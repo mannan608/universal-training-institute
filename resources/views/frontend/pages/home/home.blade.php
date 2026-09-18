@@ -237,11 +237,7 @@
         </div>
 
     </section>
-
-
-    {{-- ================================================================
-    STATISTICS
-================================================================ --}}
+    {{-- STATISTICS --}}
     <section class="w-full bg-neutral-25 py-14 md:py-18 lg:py-24">
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -385,19 +381,12 @@
         </div>
 
     </section>
-
-
-    {{-- ================================================================
-    MARQUEE
-================================================================ --}}
+    {{--  MARQUEE --}}
     @include('frontend.pages.home.section.marquee')
 
 
-    {{-- ================================================================
-    ACADEMIC DISCIPLINES
-================================================================ --}}
+    {{-- ACADEMIC DISCIPLINES --}}
     <section class="mt-8 bg-brand-100 py-14 md:mt-12 md:py-18 lg:mt-16 lg:py-24">
-
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end">
@@ -506,126 +495,10 @@
             </div>
 
         </div>
-
     </section>
 
-
-    <section class="bg-brand-100 py-16 px-6 lg:px-12 text-[#1C2826] font-sans antialiased">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-
-        {{-- Column 1: Trade --}}
-        <div class="space-y-4">
-            <div class="relative">              
-                <div class="relative z-10">
-                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Trade</h2>
-                    <p class="text-sm text-slate-600 mt-2 font-light">
-                        Hands-on construction & building qualifications.
-                    </p>
-                </div>
-            </div>
-
-            <div class="space-y-1 pt-4">
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Certificate III in Carpentry</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CPC30220</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Building and Construction</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CPC50220</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        {{-- Column 2: Health --}}
-        <div class="space-y-4">
-            <div class="relative">
-               
-                <div class="relative z-10">
-                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Health</h2>
-                    <p class="text-sm text-slate-600 mt-2 font-light">
-                        Care, ageing and mental health pathways.
-                    </p>
-                </div>
-            </div>
-
-            <div class="space-y-1 pt-4">
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Certificate IV in Ageing Support</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CHC43015</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Mental Health</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">CHC53315</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        {{-- Column 3: Business --}}
-        <div class="space-y-4">
-            <div class="relative">
-              
-                <div class="relative z-10">
-                    <h2 class="text-3xl lg:text-4xl font-serif text-slate-900 tracking-tight">Business</h2>
-                    <p class="text-sm text-slate-600 mt-2 font-light">
-                        Leadership, management and enterprise skills.
-                    </p>
-                </div>
-            </div>
-
-            <div class="space-y-1 pt-4">
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Diploma of Business</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">BSB50120</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-
-                <a href="#" class="group flex items-baseline gap-4 p-2 hover:bg-white  transition-all duration-200 rounded-md">
-                    <div>
-                        <h3 class="text-base font-medium text-slate-800 group-hover:text-black">Advanced Diploma of Business</h3>
-                        <span class="text-xs font-mono text-slate-400 mt-1 block uppercase">BSB60120</span>
-                    </div>
-                    <svg class="w-4 h-4 text-slate-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-    {{-- ================================================================
-    MOST-ENROLLED QUALIFICATIONS
-================================================================ --}}
+    {{-- MOST-ENROLLED QUALIFICATIONS --}}
     <section id="courses" class="w-full bg-neutral-50 py-14 md:py-18 lg:py-24">
-
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div
@@ -664,14 +537,8 @@
                 </div>
 
             </div>
-
-
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
-
-
-                {{-- ====================================================
-                COURSE 1
-            ===================================================== --}}
+                {{-- COURSE 1 --}}
                 <div
                     class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
@@ -748,8 +615,6 @@
                         </div>
 
                     </div>
-
-
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
@@ -769,13 +634,8 @@
                         </button>
 
                     </div>
-
                 </div>
-
-
-                {{-- ====================================================
-                COURSE 2
-            ===================================================== --}}
+                {{--COURSE 2--}}
                 <div
                     class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
@@ -875,11 +735,7 @@
                     </div>
 
                 </div>
-
-
-                {{-- ====================================================
-                COURSE 3
-            ===================================================== --}}
+                {{-- COURSE 3 --}}
                 <div
                     class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
@@ -979,11 +835,7 @@
                     </div>
 
                 </div>
-
-
-                {{-- ====================================================
-                COURSE 4
-            ===================================================== --}}
+                {{-- COURSE 4 --}}
                 <div
                     class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
@@ -1083,26 +935,15 @@
                     </div>
 
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    {{-- ================================================================
-    PROSPECTUS / LEAD CAPTURE
-================================================================ --}}
+    {{-- PROSPECTUS / LEAD CAPTURE--}}
     <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 md:py-18 lg:px-8 lg:py-24">
-
         <div
             class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12">
-
-
-            {{-- ====================================================
-            LEFT CONTENT
-        ===================================================== --}}
+            {{--  LEFT CONTENT --}}
             <div class="flex flex-col justify-between gap-8 bg-brand-50 p-6 md:p-10 lg:col-span-7">
 
                 <div class="flex flex-col gap-5">
@@ -1219,11 +1060,7 @@
                 </div>
 
             </div>
-
-
-            {{-- ====================================================
-            RIGHT FORM
-        ===================================================== --}}
+            {{--RIGHT FORM --}}
             <div class="flex flex-col justify-center bg-neutral-25 p-6 md:p-10 lg:col-span-5">
 
                 <form class="flex flex-col gap-5"
@@ -1338,18 +1175,11 @@
                 </form>
 
             </div>
-
         </div>
-
     </section>
 
-
-    {{-- ================================================================
-    ADMISSIONS CTA
-================================================================ --}}
-    <section id="consultation"
-        class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
-
+    {{-- ADMISSIONS CTA--}}
+    <section  class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
@@ -1422,6 +1252,5 @@
                 </div>
             </div>
         </div>
-
     </section>
 @endsection
