@@ -1,644 +1,1057 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'International Students Guide')
+@section('title','International Students Guide')
 
 @section('content')
-     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+    <section class="relative overflow-hidden bg-brand-25">
+        <div class="absolute inset-0 mesh-background"></div>
 
-        <section id="overview" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 text-white p-8 sm:p-12 shadow-2xl border border-slate-800">
-            <div class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
 
-            <div class="relative z-10 max-w-3xl space-y-6">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider">
-                    <i class="fa-solid fa-shield-halved"></i> Australian Student Visa Requirement
+            <div class="mx-auto max-w-3xl text-center">
+
+                {{-- Badge --}}
+                <div
+                    class="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-200/60 bg-brand-500 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm">
+                    <span class="h-2 w-2 animate-pulse  rounded-full bg-brand-50"></span>
+                    International Students Guide
                 </div>
 
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-                    Genuine Student (GS) <br class="hidden sm:inline" />
-                    <span class="bg-gradient-to-r from-indigo-300 via-sky-300 to-white bg-clip-text text-transparent">Statement Guide</span>
+                {{-- Heading --}}
+                <h1
+                    class="font-heading text-4xl font-extrabold leading-tight tracking-tight text-navy-900 sm:text-5xl lg:text-6xl">
+                    Your Gateway to Studying & Living in
+                    <span class="gradient-text">Sydney</span>
                 </h1>
 
-                <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-                    A comprehensive, step-by-step master guide to drafting an authentic, evidence-backed GS statement that fulfills Department of Home Affairs (DHA) criteria for Australian Subclass 500 visas.
+                {{-- Description --}}
+                <p class="mt-6 text-base font-normal leading-relaxed text-slate-600 sm:text-lg">
+                    Gain world-class practical qualifications with Universal Technology Institute.
+                    Simplified entry, dedicated support, and vibrant campus life await you.
                 </p>
 
-                <!-- Quick Action Buttons -->
-                <div class="flex flex-wrap items-center gap-3 pt-2">
-                    <button onclick="downloadPdfSummary()" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm px-5 py-3 rounded-xl shadow-lg shadow-indigo-600/30 transition-all">
-                        <i class="fa-solid fa-file-pdf"></i> Download PDF Summary
-                    </button>
-                    <button onclick="scrollToStructure()" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm px-5 py-3 rounded-xl border border-slate-700 transition-all">
-                        <i class="fa-solid fa-sitemap"></i> View Paragraph Layout
-                    </button>
-                    <button onclick="copyStructureToClipboard()" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm px-5 py-3 rounded-xl border border-slate-700 transition-all">
-                        <i class="fa-solid fa-copy"></i> Copy Outline
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            
-            <div class="lg:col-span-2 space-y-6">
-                <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-                    <div class="flex items-center gap-3 text-indigo-600 dark:text-indigo-400 font-bold text-sm tracking-wide uppercase">
-                        <i class="fa-solid fa-circle-info"></i> Fundamental Concept
-                    </div>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">What is a Genuine Student Statement?</h2>
-                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
-                        The <strong>Genuine Student (GS) requirement</strong> replaced the GTE criteria to evaluate international applicants accurately. It assesses whether your primary motivation in Australia is obtaining a quality education, demonstrate genuine intent to study, and return or transition legally based on realistic career trajectory.
-                    </p>
-                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
-                        Your GS statement must directly answer specific structured questions in the visa application portal, backed with <strong>verifiable documentary evidence</strong>.
-                    </p>
-
-                    <!-- Alert Note Box -->
-                    <div class="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 flex items-start gap-3.5 text-sm mt-4">
-                        <i class="fa-solid fa-triangle-exclamation text-amber-600 dark:text-amber-400 text-lg mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="font-semibold block mb-0.5">Crucial Advice:</strong> Generic statements without supporting evidence often lead to delays or refusal. Every claim regarding financial stability, employment history, or salary expectations must reference a document.
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <!-- Pillars Highlights Badge Box -->
-            <div class="bg-gradient-to-b from-slate-900 to-indigo-950 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl space-y-6">
-                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-                    <h3 class="font-bold text-lg text-white flex items-center gap-2">
-                        <i class="fa-solid fa-cubes text-indigo-400"></i> The 3 Pillars of GS
+            {{-- Quick Facts --}}
+            <div id="quick-facts" class="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+
+                {{-- Fact 1 --}}
+                <div
+                    class="group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 00-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            </svg>
+                        </span>
+                        Graduate Satisfaction
+                    </div>
+
+                    <p class="font-heading text-2xl font-bold tracking-tight text-slate-900">
+                        95%
+                    </p>
+
+                </div>
+
+                {{-- Fact 2 --}}
+                <div
+                    class="group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            </svg>
+                        </span>
+                        CRICOS
+                    </div>
+
+                    <p class="font-heading text-lg font-bold tracking-tight text-slate-900 sm:text-xl">
+                        Registered Provider
+                    </p>
+
+                </div>
+
+                {{-- Fact 3 --}}
+                <div
+                    class="group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            </svg>
+                        </span>
+                        5 Intakes
+                    </div>
+
+                    <p class="font-heading text-lg font-bold tracking-tight text-slate-900 sm:text-xl">
+                        Per Academic Year
+                    </p>
+
+                </div>
+
+                {{-- Fact 4 --}}
+                <div
+                    class="group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            </svg>
+                        </span>
+                        Global Nationalities
+                    </div>
+
+                    <p class="font-heading text-2xl font-bold tracking-tight text-slate-900">
+                        50+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    {{-- =========================================================
+        01. APPLICATION WORKFLOW
+    ========================================================== --}}
+    <section class="w-full border-b border-slate-200 bg-white py-16 sm:py-20" data-purpose="workflow-steps">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            {{-- Section Header --}}
+            <div class="mb-12 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+
+                <div class="max-w-2xl">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-600">
+                        <span class="h-px w-7 bg-brand-500"></span>
+                        01 / Application Workflow
+                    </div>
+
+                    <h2 class="font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                        How to apply
+                    </h2>
+
+                    <p class="mt-3 max-w-xl text-sm leading-relaxed text-slate-500 sm:text-base">
+                        Follow a clear six-step pathway from your initial application
+                        through to your arrival and orientation in Sydney.
+                    </p>
+
+                </div>
+
+                <div
+                    class="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs font-medium text-slate-600">
+                    <svg class="h-4 w-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" />
+                    </svg>
+                    Estimated completion: 2–4 weeks
+                </div>
+
+            </div>
+
+
+            {{-- Steps --}}
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+                {{-- Step 01 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            01
+                        </span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Submit your application
                     </h3>
-                    <span class="text-xs bg-indigo-500/20 text-indigo-300 px-2.5 py-1 rounded-full font-mono">DHA Criteria</span>
-                </div>
-                
-                <ul class="space-y-4 text-sm">
-                    <li class="flex items-start gap-3">
-                        <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">1</div>
-                        <div>
-                            <strong class="text-slate-100 block">Ties to Home Country</strong>
-                            <span class="text-slate-400 text-xs">Family, economic, assets, and social obligations.</span>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">2</div>
-                        <div>
-                            <strong class="text-slate-100 block">Financial & Local Context</strong>
-                            <span class="text-slate-400 text-xs">Proof of funding, living budget, and course value.</span>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">3</div>
-                        <div>
-                            <strong class="text-slate-100 block">Value of Course to Future</strong>
-                            <span class="text-slate-400 text-xs">Expected career growth, salary boost, local job market.</span>
-                        </div>
-                    </li>
-                </ul>
 
-                <div class="pt-2 border-t border-slate-800">
-                    <div class="text-xs text-slate-400 flex items-center gap-2">
-                        <i class="fa-solid fa-circle-check text-emerald-400"></i> Word count limit: Max 150 words per question field.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pillars" class="space-y-8">
-            <div class="text-center max-w-2xl mx-auto space-y-2">
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">Detailed Breakdown</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Address Each Pillar with Detail & Evidence</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm">Provide concrete proof for every argument you present in your application.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-house-user"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">1. Ties to Home Country</h3>
-                        <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm">
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-indigo-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Family obligations, dependants, or aging parents needing support.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-indigo-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Existing employment offer or guaranteed post-study role back home.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-indigo-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Property deeds, land ownership, family assets, or family business interests.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1.5">
-                        <i class="fa-solid fa-paperclip"></i> Key Proof: Deeds, job letters, affidavits
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-wallet"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">2. Financial Circumstances</h3>
-                        <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm">
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-sky-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Clear origin of liquid funds for tuition and AUD $29,710+ living expenses.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-sky-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Sponsorship letters with tax documents and verified bank statements.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-sky-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Realistic understanding of Australian living cost without relying on part-time jobs.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-sky-600 dark:text-sky-400 font-semibold flex items-center gap-1.5">
-                        <i class="fa-solid fa-paperclip"></i> Key Proof: Bank slips, tax returns, loan letters
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">3. Course Value & Career</h3>
-                        <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm">
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Why this specific university curriculum outperforms options in your home country.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Expected salary increment (e.g. +40%) upon returning to your local job market.</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1 shrink-0 text-xs"></i>
-                                <span>Alignment with your past academic degree or work history.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1.5">
-                        <i class="fa-solid fa-paperclip"></i> Key Proof: Job market statistics, salary reports
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="writing-tips" class="space-y-6">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Writing Tips That Make a Difference</h2>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm">Practical guidelines to elevate your writing quality and clarity.</p>
-                </div>
-
-                <!-- Filter Controls -->
-                <div class="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl self-start">
-                    <button onclick="filterTips('all')" class="tip-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-xs transition-all" data-category="all">All Tips</button>
-                    <button onclick="filterTips('do')" class="tip-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" data-category="do">Do's</button>
-                    <button onclick="filterTips('dont')" class="tip-btn px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" data-category="dont">Don'ts</button>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="tipsGrid">
-                
-                <!-- Tip Card 1 -->
-                <div class="tip-card do bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 text-xs font-semibold">
-                            <i class="fa-solid fa-circle-check"></i> DO
-                        </span>
-                        <span class="text-xs text-slate-400">Clarity & Specifics</span>
-                    </div>
-                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Be specific, not generic</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Avoid vague statements like "Australia has great education." Name specific subjects, professors, lab equipment, or university modules that align directly with your career goals.
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Complete the online enquiry or application form. Our international admissions team will review
+                        your certified transcripts and identity documents.
                     </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        Documentation
+                    </div>
+
                 </div>
 
-                <!-- Tip Card 2 -->
-                <div class="tip-card do bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 text-xs font-semibold">
-                            <i class="fa-solid fa-circle-check"></i> DO
+
+                {{-- Step 02 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            02
                         </span>
-                        <span class="text-xs text-slate-400">Verifiable Evidence</span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+
                     </div>
-                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Use evidence, not promises</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Instead of saying "I will get a high-paying job," state "According to Job Outlook 2025 data, Data Analysts in my home region earn $45,000 annually vs $25,000 without a Master's degree."
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Offer Letter (OL)
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Receive your formal Conditional or Unconditional Offer Letter and Student Agreement detailing
+                        course fees, terms, and intake dates.
                     </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        3–5 Working Days
+                    </div>
+
                 </div>
 
-                <!-- Tip Card 3 -->
-                <div class="tip-card dont bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 text-xs font-semibold">
-                            <i class="fa-solid fa-circle-xmark"></i> DON'T
+
+                {{-- Step 03 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            03
                         </span>
-                        <span class="text-xs text-slate-400">Common Pitfall</span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+
                     </div>
-                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Avoid copy-paste agent templates</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Visa officers easily identify recycled agency templates. Write in your own authentic voice. Personal details and specific family circumstances cannot be copied.
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Accept &amp; pay deposit
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Sign the Student Acceptance Agreement and transfer the required initial tuition deposit along
+                        with Overseas Student Health Cover (OSHC) fee.
                     </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        Payment Lock
+                    </div>
+
                 </div>
 
-                <!-- Tip Card 4 -->
-                <div class="tip-card dont bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 text-xs font-semibold">
-                            <i class="fa-solid fa-circle-xmark"></i> DON'T
+
+                {{-- Step 04 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            04
                         </span>
-                        <span class="text-xs text-slate-400">Focus Misplacement</span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            <path d="M5 4h14v16H5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+
                     </div>
-                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Don't focus on post-study migration</h3>
-                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        While Australian post-study work pathways are legal, your statement must focus primarily on academic value and immediate post-graduation plans back in your home country or region.
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Confirmation of Enrolment
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        We issue your official electronic Confirmation of Enrolment (eCoE) registered in PRISMS —
+                        the vital instrument required for your student visa.
                     </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        PRISMS CoE
+                    </div>
+
+                </div>
+
+
+                {{-- Step 05 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            05
+                        </span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 11l3 3 5-5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                            <path d="M5 3h14v18H5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Apply for student visa
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Lodge your Subclass 500 visa via ImmiAccount with the Department of Home Affairs, including
+                        your GS statement and biometric checks.
+                    </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        Subclass 500
+                    </div>
+
+                </div>
+
+
+                {{-- Step 06 --}}
+                <div
+                    class="group relative rounded-2xl border border-slate-200 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-lg">
+
+                    <div class="mb-5 flex items-center justify-between">
+
+                        <span
+                            class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-sm font-bold text-white shadow-sm">
+                            06
+                        </span>
+
+                        <svg class="h-5 w-5 text-slate-300 transition-colors group-hover:text-brand-500" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Arrival &amp; orientation
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Touch down in Sydney, attend compulsory campus orientation, collect your student ID card,
+                        and start classes with your trainers at Parramatta.
+                    </p>
+
+                    <div class="mt-5 border-t border-slate-200 pt-4 text-xs font-medium text-slate-500">
+                        Campus Welcome
+                    </div>
+
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="checklist" class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-800 space-y-8">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-800 pb-6">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Document Readiness</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Information & Evidence Checklist</h2>
-                    <p class="text-slate-400 text-sm mt-1">Check off required documents before finalizing your visa application.</p>
+
+    {{-- =========================================================
+        02. ADMISSIONS CRITERIA
+    ========================================================== --}}
+    <section class="w-full bg-slate-950 py-16 text-white sm:py-20" data-purpose="admissions-criteria">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            {{-- Header --}}
+            <div class="mb-12 max-w-3xl">
+
+                <div class="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-400">
+                    <span class="h-px w-7 bg-brand-400"></span>
+                    02 / Essential Admissions Criteria
                 </div>
 
-                <!-- Live Progress Counter Bar -->
-                <div class="bg-slate-800/90 border border-slate-700 p-4 rounded-2xl min-w-[220px] space-y-2">
-                    <div class="flex justify-between items-center text-xs font-semibold">
-                        <span class="text-slate-300">Completion Status</span>
-                        <span id="progressPercent" class="text-indigo-400 font-mono text-sm">0%</span>
-                    </div>
-                    <div class="w-full bg-slate-700 h-2.5 rounded-full overflow-hidden">
-                        <div id="progressBar" class="bg-gradient-to-r from-indigo-500 to-sky-400 h-full w-0 transition-all duration-300"></div>
-                    </div>
-                    <div class="text-[11px] text-slate-400 text-right">
-                        <span id="checkedCount">0</span> of <span id="totalCount">8</span> items ready
-                    </div>
-                </div>
+                <h2 class="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Key information for international applicants.
+                </h2>
+
+                <p class="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
+                    Universal Training Institute adheres to the standards defined by the ESOS Act 2000 and the
+                    National Code 2018. Review our operating guidelines and service commitments below.
+                </p>
+
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="checklistGrid">
-                
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Personal Identity Documents</span>
-                        <span class="text-slate-400 text-xs">Valid Passport, National ID card, Birth Certificate.</span>
+
+            {{-- Cards --}}
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
                     </div>
-                </label>
 
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Academic Transcripts & Certificates</span>
-                        <span class="text-slate-400 text-xs">High school, bachelor degree certificates and marksheets.</span>
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        Offer Letter &amp; CoE
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        Conditional and unconditional Offer Letters issued within 5 business days of complete file
+                        receipt. CoE released promptly following verified initial deposit and document verification.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Processing SLA: 3–5 Business Days
                     </div>
-                </label>
 
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">English Test Results</span>
-                        <span class="text-slate-400 text-xs">IELTS, PTE Academic, or TOEFL official scoreboard.</span>
-                    </div>
-                </label>
-
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Financial Capacity Proof</span>
-                        <span class="text-slate-400 text-xs">Bank statement (3-6 months), official loan sanction letter.</span>
-                    </div>
-                </label>
-
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Employment History Evidence</span>
-                        <span class="text-slate-400 text-xs">Work experience letters, payslips, tax assessments.</span>
-                    </div>
-                </label>
-
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Home Ties Proof</span>
-                        <span class="text-slate-400 text-xs">Property deeds, family affidavits, business registration.</span>
-                    </div>
-                </label>
-
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">CoE (Confirmation of Enrolment)</span>
-                        <span class="text-slate-400 text-xs">Issued by your registered Australian education provider.</span>
-                    </div>
-                </label>
-
-                <label class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/60 cursor-pointer transition-all">
-                    <input type="checkbox" class="doc-checkbox w-5 h-5 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 focus:ring-offset-slate-900 mt-0.5" onchange="updateProgress()">
-                    <div>
-                        <span class="font-medium text-slate-200 text-sm block">Statement Breakdown Draft</span>
-                        <span class="text-slate-400 text-xs">Draft responses adhering strictly to the 150-word limit per section.</span>
-                    </div>
-                </label>
-
-            </div>
-        </section>
-
-        <section id="structure" class="space-y-6">
-            <div class="max-w-2xl space-y-2">
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">Step-by-Step Blueprint</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">A Simple Structure to Follow</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-sm">Organize your GS statement into 7 clear, logical paragraphs.</p>
-            </div>
-
-            <div class="space-y-3" id="accordionContainer">
-                
-                <!-- Step 01 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc1')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">01</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Introduction & Current Circumstances</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Brief background, current academic status, or employment role.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc1" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc1" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Clearly establish who you are and what you are currently doing.</p>
-                        <p><strong>Include:</strong> Your latest qualification, current employer, job title, and why you decided to pursue higher education at this specific point in your life.</p>
-                    </div>
                 </div>
 
-                <!-- Step 02 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc2')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">02</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Ties to Home Country & Personal Commitments</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Family, social, and economic incentives to return home.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc2" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc2" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Prove strong incentives that guarantee your departure from Australia upon study completion.</p>
-                        <p><strong>Include:</strong> Dependants, elderly parents, inherited property, family business participation, or community standing.</p>
+
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                            <path d="M12 14v7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
                     </div>
+
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        Entry Requirements
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        Entry requirements vary by qualification. International students must be at least 18 years
+                        of age and hold academic qualifications equivalent to Australian Year 12 or relevant AQF
+                        prerequisites.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Min 18 Years &amp; Equivalent Year 12
+                    </div>
+
                 </div>
 
-                <!-- Step 03 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc3')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">03</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Why Australia? (Comparison with Home Country)</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Justification for choosing Australia over local options.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc3" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc3" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Explain why studying locally or in neighboring countries is insufficient for your career.</p>
-                        <p><strong>Include:</strong> Lack of practical research exposure in home institutions, higher global academic ranking, or specialized accreditation in Australia.</p>
+
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
                     </div>
+
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        Intakes &amp; Academic Calendar
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        UTI runs four intake terms annually across January/February, April/May, July, and October.
+                        Structured terms allow flexibility in structuring study timetables and onshore planning.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Term 1 · Term 2 · Term 3 · Term 4
+                    </div>
+
                 </div>
 
-                <!-- Step 04 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc4')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">04</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Why This Specific Institution & Course?</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Detailed research into university syllabus and facilities.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc4" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc4" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Show you conducted thorough research before enrolling.</p>
-                        <p><strong>Include:</strong> Course units, campus location, industry partnerships, internship options, and comparisons with other Australian universities.</p>
+
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
                     </div>
+
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        Fees &amp; Payment Plans
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        Transparent course fees with structured quarterly installment payment plans. Material fees,
+                        uniform kits, and compulsory OSHC coverage can be packaged seamlessly.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Flexible Quarterly Schedules
+                    </div>
+
                 </div>
 
-                <!-- Step 05 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc5')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">05</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Future Career Plan & Expected Return on Investment</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Target job roles, salary projections, and industry growth.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc5" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc5" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Prove that the financial cost of studying in Australia will yield realistic returns.</p>
-                        <p><strong>Include:</strong> Target job roles (e.g. Senior Product Manager), names of hiring companies in your country, and financial ROI estimation.</p>
+
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
                     </div>
+
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        RPL &amp; Credit Transfer
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        Recognise prior learning, international work experience, and formal coursework completed at
+                        other accredited institutions towards your UTI qualification.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Assessment Prior to Enrolment
+                    </div>
+
                 </div>
 
-                <!-- Step 06 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc6')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">06</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Financial Capacity & Funding Sources</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Clear breakdown of who pays for tuition and living costs.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc6" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc6" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Demonstrate unquestionable financial stability without needing unauthorized work in Australia.</p>
-                        <p><strong>Include:</strong> Sponsor relationship, annual sponsor income, bank balances, and education loan details.</p>
-                    </div>
-                </div>
 
-                <!-- Step 07 -->
-                <div class="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden shadow-xs">
-                    <button onclick="toggleAccordion('acc7')" class="w-full p-5 text-left flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-4">
-                            <span class="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">07</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white text-base">Closing Statement & Declaration</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400">Reaffirm genuine student intent and commitment to visa rules.</p>
-                            </div>
-                        </div>
-                        <i id="icon-acc7" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc7" class="hidden p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm text-slate-600 dark:text-slate-300 space-y-2">
-                        <p><strong>Goal:</strong> Formally conclude your statement with a pledge of compliance.</p>
-                        <p><strong>Include:</strong> Reaffirmation that you intend to comply with visa condition 8105 (work hours) and return home after completion.</p>
+                {{-- Card --}}
+                <div
+                    class="group rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-400/30 hover:bg-white/[0.07]">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-400/10 text-brand-400">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                        </svg>
                     </div>
+
+                    <h3 class="font-heading text-lg font-bold text-white">
+                        Orientation Week
+                    </h3>
+
+                    <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                        Mandatory induction covering campus facilities, academic integrity rules, ESOS visa
+                        compliance, Opal cards and transport setups, and introductions to your vocational trainers.
+                    </p>
+
+                    <div class="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-slate-500">
+                        <span class="h-1.5 w-1.5 rounded-full bg-brand-400"></span>
+                        Mandatory for Subclass 500
+                    </div>
+
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bg-gradient-to-r from-indigo-600 via-indigo-700 to-blue-700 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="space-y-3 text-center md:text-left">
-                <h2 class="text-2xl sm:text-3xl font-extrabold">Ready to draft your GS Statement?</h2>
-                <p class="text-indigo-100 text-sm max-w-xl">Use our structured checklist and 7-paragraph layout to craft an authentic, evidence-backed visa application.</p>
+
+    {{-- =========================================================
+        03. VISA & COMPLIANCE
+    ========================================================== --}}
+    <section class="w-full border-b border-slate-200 bg-slate-50 py-16 sm:py-20" data-purpose="visa-guidance">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
+
+                {{-- Left --}}
+                <div class="lg:col-span-5">
+
+                    <div class="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-600">
+                        <span class="h-px w-7 bg-brand-500"></span>
+                        03 / Visa Information
+                    </div>
+
+                    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+                        High-level guidance for student visas.
+                    </h2>
+
+                    <p class="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
+                        UTI provides general educational guidance only. Immigration advice, visa lodgement, and
+                        individual claims must be handled directly through the Department of Home Affairs or a
+                        registered migration agent (MARA).
+                    </p>
+
+
+                    {{-- Official Framework --}}
+                    <div class="mt-7 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.8" />
+                                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.8" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <p class="text-sm font-bold text-slate-900">
+                                    Official Legislative Framework
+                                </p>
+
+                                <p class="mt-0.5 text-xs text-slate-500">
+                                    ESOS Act 2000 · National Code 2018
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <p class="mt-4 text-sm leading-relaxed text-slate-600">
+                            International education in Australia is strictly regulated under the Education Services
+                            for Overseas Students (ESOS) Act 2000 and the National Code 2018.
+                        </p>
+
+                        <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 transition hover:text-brand-800"
+                            href="https://www.homeaffairs.gov.au" rel="noopener noreferrer" target="_blank">
+
+                            Department of Home Affairs
+
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                {{-- Right --}}
+                <div class="space-y-4 lg:col-span-7">
+
+                    {{-- Visa item --}}
+                    <div
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-md sm:p-6">
+
+                        <div class="flex gap-4">
+
+                            <div
+                                class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600 sm:flex">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 11h8M8 15h5M6 3h9l3 3v15H6z" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.8" />
+                                </svg>
+                            </div>
+
+                            <div class="min-w-0 flex-1">
+
+                                <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+
+                                    <h3 class="font-heading text-base font-bold text-slate-900">
+                                        English Requirements
+                                    </h3>
+
+                                    <span
+                                        class="w-fit rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
+                                        IELTS 6.0 / PTE 50+
+                                    </span>
+
+                                </div>
+
+                                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                                    IELTS, PTE Academic, or TOEFL iBT minimum benchmark scores by qualification level.
+                                    For diploma-level courses: IELTS band score of 6.0 overall (no band less than 5.5)
+                                    or equivalent accepted test.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- GS --}}
+                    <div
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-md sm:p-6">
+
+                        <div class="flex gap-4">
+
+                            <div
+                                class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 sm:flex">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.8" />
+                                    <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.8" />
+                                </svg>
+                            </div>
+
+                            <div class="min-w-0 flex-1">
+
+                                <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+
+                                    <h3 class="font-heading text-base font-bold text-slate-900">
+                                        Genuine Student (GS) Requirement
+                                    </h3>
+
+                                    <span
+                                        class="w-fit rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                                        Mandatory
+                                    </span>
+
+                                </div>
+
+                                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                                    The GS assessment replaces the former GTE test. You must demonstrate that your
+                                    primary purpose for coming to Australia is to obtain an education, demonstrating
+                                    ties to your home country and realistic career return on investment.
+                                </p>
+
+                                <a href="{{ url('/gs-guide') }}"
+                                    class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary-500 hover:text-secondary-800">
+                                    Read GS Guide &amp; Checklist
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.8" />
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- Working rights --}}
+                    <div
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-md sm:p-6">
+
+                        <div class="flex gap-4">
+
+                            <div
+                                class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600 sm:flex">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 8v8m-4-4h8" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.8" />
+                                    <rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor"
+                                        stroke-width="1.8" />
+                                </svg>
+                            </div>
+
+                            <div class="min-w-0 flex-1">
+
+                                <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+
+                                    <h3 class="font-heading text-base font-bold text-slate-900">
+                                        Working Rights (Condition 8105)
+                                    </h3>
+
+                                    <span
+                                        class="w-fit rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
+                                        48 hrs / Fortnight
+                                    </span>
+
+                                </div>
+
+                                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                                    Subclass 500 visa holders are permitted to work up to 48 hours per fortnight when
+                                    their study course is in session, and unlimited hours during recognized term breaks
+                                    and holidays.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- OSHC --}}
+                    <div
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-md sm:p-6">
+
+                        <div class="flex gap-4">
+
+                            <div
+                                class="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-rose-600 sm:flex">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21s-7-4.5-7-10V5l7-3 7 3v6c0 5.5-7 10-7 10z" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.8" />
+                                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.8" />
+                                </svg>
+                            </div>
+
+                            <div class="min-w-0 flex-1">
+
+                                <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+
+                                    <h3 class="font-heading text-base font-bold text-slate-900">
+                                        Overseas Student Health Cover (OSHC)
+                                    </h3>
+
+                                    <span
+                                        class="w-fit rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
+                                        Visa Condition 8501
+                                    </span>
+
+                                </div>
+
+                                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                                    Continuous medical and hospital insurance is legally required for the entire length
+                                    of your student visa. UTI can arrange partner-discounted coverage through Medibank,
+                                    Bupa, or Allianz Care.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                <button onclick="downloadPdfSummary()" class="bg-white text-indigo-700 hover:bg-indigo-50 font-bold px-6 py-3 rounded-xl shadow-md transition-all text-sm text-center">
-                    <i class="fa-solid fa-download mr-1"></i> Download PDF Guide
-                </button>
+        </div>
+    </section>
+
+
+    {{-- =========================================================
+        04. LIFE IN AUSTRALIA
+    ========================================================== --}}
+    <section class="w-full bg-white py-16 sm:py-20" data-purpose="lifestyle-and-logistics">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            {{-- Header --}}
+            <div class="mb-10 max-w-3xl">
+
+                <div class="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand-600">
+                    <span class="h-px w-7 bg-brand-500"></span>
+                    04 / Life in Australia
+                </div>
+
+                <h2 class="font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                    Settling into Sydney.
+                </h2>
+
+                <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                    Parramatta is Western Sydney's thriving central commercial hub, offering world-class dining,
+                    parks, and direct public transit into the Sydney CBD.
+                </p>
+
             </div>
-        </section>
 
-    </main>
 
-  
+            {{-- Lifestyle Cards --}}
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
 
-    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-5 py-3 rounded-xl shadow-2xl text-sm font-medium transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 z-50">
-        <i class="fa-solid fa-circle-check text-emerald-400 dark:text-emerald-600 text-lg"></i>
-        <span id="toastMessage">Notification action completed!</span>
-    </div>
+                {{-- Accommodation --}}
+                <div
+                    class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg">
 
-    <script>
-        const themeToggleBtn = document.getElementById('themeToggle');
-        
-        // System preference default check
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 11l9-8 9 8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                            <path d="M5 10v10h14V10M9 20v-6h6v6" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                        </svg>
+                    </div>
 
-        themeToggleBtn.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            showToast(document.documentElement.classList.contains('dark') ? 'Dark Mode Enabled' : 'Light Mode Enabled');
-        });
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Accommodation
+                    </h3>
 
-        function toggleAccordion(id) {
-            const el = document.getElementById(id);
-            const icon = document.getElementById('icon-' + id);
-            
-            if (el.classList.contains('hidden')) {
-                el.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-            } else {
-                el.classList.add('hidden');
-                icon.classList.remove('rotate-180');
-            }
-        }
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                        Select between vetted homestays with Australian families, purpose-built student housing
+                        (UniLodge, Scape), or share-houses situated 10–25 mins from the Parramatta campus.
+                    </p>
 
-        function filterTips(category) {
-            const cards = document.querySelectorAll('.tip-card');
-            const btns = document.querySelectorAll('.tip-btn');
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-xs text-slate-500">
+                            Budget
+                        </span>
 
-            btns.forEach(btn => {
-                if (btn.dataset.category === category) {
-                    btn.classList.add('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-xs');
-                    btn.classList.remove('text-slate-600', 'dark:text-slate-400');
-                } else {
-                    btn.classList.remove('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-xs');
-                    btn.classList.add('text-slate-600', 'dark:text-slate-400');
-                }
-            });
+                        <span class="text-sm font-bold text-slate-900">
+                            $220–$450 / wk
+                        </span>
+                    </div>
 
-            cards.forEach(card => {
-                if (category === 'all') {
-                    card.style.display = 'block';
-                } else if (card.classList.contains(category)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
+                </div>
 
-        function updateProgress() {
-            const checkboxes = document.querySelectorAll('.doc-checkbox');
-            const total = checkboxes.length;
-            let checked = 0;
 
-            checkboxes.forEach(cb => {
-                if (cb.checked) checked++;
-            });
+                {{-- Cost --}}
+                <div
+                    class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg">
 
-            const percent = Math.round((checked / total) * 100);
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+                    </div>
 
-            document.getElementById('checkedCount').innerText = checked;
-            document.getElementById('totalCount').innerText = total;
-            document.getElementById('progressPercent').innerText = percent + '%';
-            document.getElementById('progressBar').style.width = percent + '%';
-        }
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Cost of Living
+                    </h3>
 
-        function scrollToStructure() {
-            document.getElementById('structure').scrollIntoView({ behavior: 'smooth' });
-        }
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                        Realistic weekly budgets covering grocery essentials, phone connectivity, public transit,
+                        and recreational spending aligned with official Study Australia financial benchmarks.
+                    </p>
 
-        function copyStructureToClipboard() {
-            const structureText = `
-Genuine Student Statement 7-Paragraph Structure:
-1. Introduction & Current Circumstances
-2. Ties to Home Country & Personal Commitments
-3. Why Australia? (Comparison with Home Country)
-4. Why This Specific Institution & Course?
-5. Future Career Plan & Expected Return on Investment
-6. Financial Capacity & Funding Sources
-7. Closing Statement & Declaration
-            `.trim();
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-xs text-slate-500">
+                            Govt Guideline
+                        </span>
 
-            const tempInput = document.createElement('textarea');
-            tempInput.value = structureText;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
+                        <span class="text-sm font-bold text-slate-900">
+                            $29,710 / yr
+                        </span>
+                    </div>
 
-            showToast('Outline copied to clipboard!');
-        }
+                </div>
 
-        function downloadPdfSummary() {
-            showToast('PDF Summary generated & ready for download!');
-        }
 
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            const toastMessage = document.getElementById('toastMessage');
-            
-            toastMessage.innerText = message;
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
+                {{-- Arrival --}}
+                <div
+                    class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg">
 
-            setTimeout(() => {
-                toast.classList.remove('translate-y-0', 'opacity-100');
-                toast.classList.add('translate-y-20', 'opacity-0');
-            }, 3000);
-        }
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 4h14v17H5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+                            <path d="M9 8h6M9 12h6M9 16h3" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                        </svg>
+                    </div>
 
-        // Initialize progress bar on load
-        window.onload = function() {
-            updateProgress();
-        };
-    </script>
-   
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Arrival Guide (72h)
+                    </h3>
+
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                        Your landing roadmap from Sydney Kingsford Smith Airport (SYD): get an Australian eSIM,
+                        set up your Commonwealth/ANZ bank account, apply for a Tax File Number (TFN), and collect
+                        transport passes.
+                    </p>
+
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-xs text-slate-500">
+                            Airport Transit
+                        </span>
+
+                        <span class="text-sm font-bold text-slate-900">
+                            Train / Shuttle
+                        </span>
+                    </div>
+
+                </div>
+
+
+                {{-- Transport --}}
+                <div
+                    class="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg">
+
+                    <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-violet-50 text-violet-600">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 16h16M6 16l1-7h10l1 7M8 19h.01M16 19h.01M8 9V6h8v3" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.8" />
+                        </svg>
+                    </div>
+
+                    <h3 class="font-heading text-lg font-bold text-slate-900">
+                        Sydney Transport
+                    </h3>
+
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                        Tap-and-go with Opal cards or contactless debit cards on Sydney Trains, light rail lines,
+                        Parramatta River ferries, and buses connecting Church Street straight to campus doors.
+                    </p>
+
+                    <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                        <span class="text-xs text-slate-500">
+                            Campus Stop
+                        </span>
+
+                        <span class="text-sm font-bold text-slate-900">
+                            Parramatta Interchg
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            {{-- CTA --}}
+            <div class="mt-10 flex justify-center">
+
+                <a href="#international-admissions"
+                    class="group inline-flex items-center gap-3 rounded-xl bg-brand-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-lg">
+
+                    <span>
+                        Talk to international admissions
+                    </span>
+
+                    <span
+                        class="flex h-7 w-7 items-center justify-center rounded-lg bg-white/10 transition-transform duration-300 group-hover:translate-x-1">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.8" />
+                        </svg>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
 
 @endsection

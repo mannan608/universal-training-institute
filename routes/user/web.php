@@ -36,6 +36,7 @@ Route::get('/courses/categories/{categoryslug}', [IndustryController::class, 'ca
 Route::get('/courses/{courseslug}', [IndustryController::class, 'show'])->name('course.show');
 
 Route::get('/international-inquiry', [FrontendController::class, 'internationalInquiry'])->name('international');
+Route::get('/gs-guide', [FrontendController::class, 'gsGuide'])->name('gs-guide');
 
 
 Route::get('/check-eligibility', [CheckEligibilityController::class, 'index'])

@@ -73,4 +73,8 @@ class FrontendController extends Controller
         public function internationalInquiry(){
         return view('frontend.pages.international.index');
     }
+
+    public function gsGuide(){
+        return view('frontend.pages.international.gs-guide');
+    }
 }

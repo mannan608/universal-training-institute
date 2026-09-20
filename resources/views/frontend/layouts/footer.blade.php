@@ -6,7 +6,7 @@
                     <div class="flex items-center gap-2">
                        <a href="/" class="flex items-center gap-3 group font-semibold">
                         <img src="{{ asset('site-logo.png') }}"  alt="Universal Training Institute" class="h-10 w-auto" width="123" height="114">
-                        <div class="hidden sm:block leading-tight">
+                        <div class="leading-tight">
                             <div class="text-brand-600 text-lg">Universal Training</div>
                             <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Institute</div>
                         </div>
