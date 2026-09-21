@@ -57,7 +57,7 @@
                                 Framework &amp; Visas</a></li>
                         <li class="text-[#a5adb1] hover:text-white transition-colors"><a href="{{ route('admission-fees')}}">Fees & Charges</a></li>
                         <li class="text-[#a5adb1] hover:text-white transition-colors"><a
-                                href="#consultation">Consultation &amp; Tours</a></li>
+                                href="{{ route('contact')}}">Consultation &amp; Tours</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">

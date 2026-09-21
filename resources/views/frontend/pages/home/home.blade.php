@@ -81,7 +81,7 @@
                         <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
                             {{-- Primary CTA --}}
-                            <a href="#courses"
+                            <a href="{{ route('courses.index') }}"
                                 class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-500 px-6 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                                 Browse All Courses
@@ -94,14 +94,14 @@
 
 
                             {{-- Secondary CTA --}}
-                            <a href="#prospectus"
+                            <a href="{{ route('international') }}"
                                 class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-brand-500 bg-neutral-25 px-6 py-3  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
 
                                 <span class="material-symbols-outlined text-lg">
                                     menu_book
                                 </span>
 
-                                Student Prospectus
+                                International Student
 
                             </a>
 
@@ -423,8 +423,8 @@
 
                 {{-- Card 1 --}}
                 @foreach ($categories as $category)
-                    <div
-                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
+                    <div onclick="window.location.href='{{ route('category-courses', ['categoryslug' => $category['slug']]) }}'"
+                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg cursor-pointer">
 
                         <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
 
@@ -432,13 +432,17 @@
                                 class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
 
                             <div
-                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+
                                 {{ $category['short_name'] }}
+
                             </div>
 
                             <div
-                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1  text-[9px] font-bold uppercase tracking-wide text-neutral-800">
+                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-neutral-800">
+
                                 2 Qualifications
+
                             </div>
 
                         </div>
@@ -450,11 +454,15 @@
 
                                 <h3
                                     class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
+
                                     {{ $category['name'] }}
+
                                 </h3>
 
                                 <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
+
                                     {{ $category['description'] }}
+
                                 </p>
 
                             </div>
@@ -464,26 +472,28 @@
 
                                 <div>
 
-                                    <span
-                                        class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    <span class="block text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                         Duration
                                     </span>
 
-                                    <span class=" text-xs font-bold text-neutral-900">
+                                    <span class="text-xs font-bold text-neutral-900">
                                         1–2 Years
                                     </span>
 
                                 </div>
 
 
+                                {{-- Existing Explore link --}}
                                 <a href="{{ route('category-courses', ['categoryslug' => $category['slug']]) }}"
-                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
+                                    onclick="event.stopPropagation();"
+                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2 text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
 
                                     Explore Trade
 
                                     <span class="material-symbols-outlined text-sm">
                                         arrow_forward
                                     </span>
+
                                 </a>
 
                             </div>
@@ -538,34 +548,34 @@
 
             </div>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
-                {{-- COURSE 1 --}}
-                <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+
+                @foreach ($courses as $course)
+                <div onclick="window.location.href='{{ route('course.show', ['courseslug' => $course['slug']]) }}'"
+                    class="flex cursor-pointer flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
                     <div class="flex flex-col gap-4">
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
                             <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CPC30220
+                                National Code: {{ $course['code'] }}
                             </span>
 
                             <span
                                 class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
-                                Work Placement Included
+                                {{ $course['category_name'] }}
                             </span>
 
                         </div>
 
 
                         <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Certificate III in Carpentry
+                            {{ $course['name'] }}
                         </h4>
 
 
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Master timber framing, roof truss installation, formwork, wall cladding and interior
-                            finishing using industry-standard equipment under certified NSW tradespeople.
+                        <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
+                            {{ $course['hero']['description'] }}
                         </p>
 
 
@@ -573,13 +583,12 @@
 
                             <div>
 
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
                                     Duration
                                 </span>
 
                                 <span class=" text-xs font-bold text-neutral-900">
-                                    104 Weeks
+                                    {{ $course['key_information']['duration'] }}
                                 </span>
 
                             </div>
@@ -587,13 +596,12 @@
 
                             <div>
 
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Location
+                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    Study Load
                                 </span>
 
                                 <span class=" text-xs font-bold text-neutral-900">
-                                    Sydney Campus
+                                     {{ $course['key_information']['mode_of_study'] }}
                                 </span>
 
                             </div>
@@ -601,13 +609,12 @@
 
                             <div>
 
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Tuition Schedule
+                                <span class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
+                                    Total Units
                                 </span>
 
                                 <span class=" text-xs font-bold text-neutral-900">
-                                    Quarterly
+                                    {{ $course['key_information']['total_units'] }}
                                 </span>
 
                             </div>
@@ -619,10 +626,10 @@
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
                         <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 108342M
+                            CRICOS CODE: {{ $course['key_information']['cricos'] }}
                         </span>
 
-                        <button type="button"
+                        <a href="{{ route('course.show', ['courseslug' => $course['slug']]) }}"
                             class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
@@ -631,315 +638,17 @@
                                 chevron_right
                             </span>
 
-                        </button>
+                        </a>
 
                     </div>
                 </div>
-                {{--COURSE 2--}}
-                <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CPC50220
-                            </span>
-
-                            <span
-                                class="rounded-md bg-warning-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-warning-700">
-                                Contractor Pathway
-                            </span>
-
-                        </div>
-
-
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Diploma of Building & Construction
-                        </h4>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Develop site supervision, cost estimation, structural compliance, building code inspection
-                            and contractor management expertise for mid-rise residential projects.
-                        </p>
-
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    52 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Prerequisites
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Year 12 / Eq.
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Career
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Site Manager
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 108343K
-                        </span>
-
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </button>
-
-                    </div>
-
-                </div>
-                {{-- COURSE 3 --}}
-                <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CHC43015
-                            </span>
-
-                            <span
-                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
-                                120 Hrs Placement
-                            </span>
-
-                        </div>
-
-
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Certificate IV in Ageing Support
-                        </h4>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Prepare for specialised frontline roles in residential care, individualised support and
-                            dementia management, including 120 hours of practical clinical placement.
-                        </p>
-
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    52 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Practicum
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    120 Hours
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Demand
-                                </span>
-
-                                <span class=" text-xs font-bold text-secondary-600">
-                                    Very High
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 104556C
-                        </span>
-
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </button>
-
-                    </div>
-
-                </div>
-                {{-- COURSE 4 --}}
-                <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CHC53315
-                            </span>
-
-                            <span
-                                class="rounded-md bg-secondary-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-secondary-700">
-                                Clinical Simulation
-                            </span>
-
-                        </div>
-
-
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Diploma of Mental Health
-                        </h4>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Develop recovery-oriented skills, non-clinical interventions, case assessment protocols
-                            and crisis-response support skills within multi-agency health frameworks.
-                        </p>
-
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    78 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Assessment
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Portfolio + Lab
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Delivery
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Face-to-Face
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 104557B
-                        </span>
-
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </button>
-
-                    </div>
-
-                </div>
+                @endforeach
+              
             </div>
         </div>
     </section>
 
-    {{-- PROSPECTUS / LEAD CAPTURE--}}
+    {{-- PROSPECTUS / LEAD CAPTURE --}}
     <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 md:py-18 lg:px-8 lg:py-24">
         <div
             class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12">
@@ -1060,7 +769,7 @@
                 </div>
 
             </div>
-            {{--RIGHT FORM --}}
+            {{-- RIGHT FORM --}}
             <div class="flex flex-col justify-center bg-neutral-25 p-6 md:p-10 lg:col-span-5">
 
                 <form class="flex flex-col gap-5"
@@ -1084,8 +793,7 @@
                     {{-- Name --}}
                     <div class="flex flex-col gap-2">
 
-                        <label for="full-name"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                        <label for="full-name" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Full Legal Name *
                         </label>
 
@@ -1098,8 +806,7 @@
                     {{-- Email --}}
                     <div class="flex flex-col gap-2">
 
-                        <label for="email"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                        <label for="email" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Email Address *
                         </label>
 
@@ -1178,8 +885,8 @@
         </div>
     </section>
 
-    {{-- ADMISSIONS CTA--}}
-    <section  class="w-full   md:py-18 lg:py-20">
+    {{-- ADMISSIONS CTA --}}
+    <section class="w-full   md:py-18 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-brand-800 py-14 text-neutral-25 rounded-2xl lg:rounded-4xl">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
@@ -1242,7 +949,7 @@
 
 
                     {{-- Campus tour --}}
-                    <a href="#prospectus"
+                    <a href="{{ route('contact') }}"
                         class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3  text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
 
                         Book Free Campus Tour

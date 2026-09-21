@@ -252,7 +252,9 @@
         "url": "https://uti.edu.au/brochures/CPC30220.pdf"
     },
 
-    "course_url": "https://uti.edu.au/courses/CPC30220"
+    "course_url": "https://uti.edu.au/courses/CPC30220",
+
+    "demand": "High"
 },
 {
     "id": 2,
@@ -260,7 +262,7 @@
     "category_slug": "trade",
     "category_name": "Trade",
     "level": "Diploma",
-    "name": "Diploma of Building and Construction (Building)",
+    "name": "Diploma of Building and Construction",
     "slug": "cpc50220-diploma-of-building-and-construction-building",
     "image": "/industry/trade-vocational/CPC50220.jpg",
 
@@ -484,7 +486,8 @@
         "url": "https://uti.edu.au/brochures/CPC50220.pdf"
     },
 
-    "course_url": "https://uti.edu.au/courses/CPC50220"
+    "course_url": "https://uti.edu.au/courses/CPC50220",
+    "demand": "High"
 },
 {
     "id": 3,
@@ -682,7 +685,8 @@
         "url": "https://uti.edu.au/brochures/CHC43015.pdf"
     },
 
-    "course_url": "https://uti.edu.au/courses/CHC43015"
+    "course_url": "https://uti.edu.au/courses/CHC43015",
+    "demand": "High"
 },
 {
     "id": 4,
@@ -888,7 +892,8 @@
         "url": "https://uti.edu.au/brochures/CHC53315.pdf"
     },
 
-    "course_url": "https://uti.edu.au/courses/CHC53315"
+    "course_url": "https://uti.edu.au/courses/CHC53315",
+    "demand": "High"
 },
 
 {
