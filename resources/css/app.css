@@ -210,30 +210,182 @@
 }
 
 @layer utilities {
-  .reveal-on-scroll {
-    will-change: opacity, transform;
-    backface-visibility: hidden;
-  }
-
   .defer-render {
     content-visibility: auto;
     contain-intrinsic-size: 1px 900px;
   }
 }
 
+/* ==========================================================================
+   PRODUCTION-READY ANIMATIONS & REVEALS
+   - Smooth cubic-bezier(0.16, 1, 0.3, 1) Apple/Stripe feel
+   - Transform & Opacity only for optimal 60-120fps compositor performance
+   - Progressive enhancement (hidden only when JS is active)
+   - prefers-reduced-motion fully respected
+   ========================================================================== */
+
+/* Hero Load Keyframes */
+@keyframes heroFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-hero-left {
+  animation: heroFadeLeft 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-hero-right {
+  animation: heroFadeRight 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+}
+
+.hero-stagger-1 { animation-delay: 0.05s; }
+.hero-stagger-2 { animation-delay: 0.16s; }
+.hero-stagger-3 { animation-delay: 0.28s; }
+.hero-stagger-4 { animation-delay: 0.40s; }
+.hero-stagger-5 { animation-delay: 0.52s; }
+
+/* Scroll-Triggered Reveal Classes (Progressive: hidden only when .js is active) */
+.js .reveal,
+.js .reveal-left,
+.js .reveal-right,
+.js .reveal-scale {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.js .reveal {
+  transform: translateY(20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js .reveal-left {
+  transform: translateX(-20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js .reveal-right {
+  transform: translateX(20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js .reveal-scale {
+  transform: translateY(16px) scale(0.98);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Revealed State */
+.js .reveal.is-revealed,
+.js .reveal-left.is-revealed,
+.js .reveal-right.is-revealed,
+.js .reveal-scale.is-revealed {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Stagger Utilities for Child Lists & Grids */
+.stagger > *:nth-child(1) { transition-delay: 0.04s; }
+.stagger > *:nth-child(2) { transition-delay: 0.12s; }
+.stagger > *:nth-child(3) { transition-delay: 0.20s; }
+.stagger > *:nth-child(4) { transition-delay: 0.28s; }
+.stagger > *:nth-child(5) { transition-delay: 0.36s; }
+.stagger > *:nth-child(6) { transition-delay: 0.44s; }
+.stagger > *:nth-child(7) { transition-delay: 0.52s; }
+.stagger > *:nth-child(8) { transition-delay: 0.60s; }
+
+.delay-75  { transition-delay: 75ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* Mobile optimization: reduced displacement for smooth mobile experience */
+@media (max-width: 640px) {
+  @keyframes heroFadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes heroFadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .js .reveal {
+    transform: translateY(14px);
+    transition-duration: 0.6s;
+  }
+  .js .reveal-left {
+    transform: translateX(-12px);
+    transition-duration: 0.6s;
+  }
+  .js .reveal-right {
+    transform: translateX(12px);
+    transition-duration: 0.6s;
+  }
+  .js .reveal-scale {
+    transform: translateY(12px) scale(0.99);
+    transition-duration: 0.6s;
+  }
+}
+
+/* Full Accessibility for Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .reveal-on-scroll,
+  .animate-hero-left,
+  .animate-hero-right,
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
   .animate-marquee,
   [class*='animate-'] {
     animation: none !important;
     transition: none !important;
   }
 
-  .reveal-on-scroll {
+  .js .reveal,
+  .js .reveal-left,
+  .js .reveal-right,
+  .js .reveal-scale,
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
     opacity: 1 !important;
     transform: none !important;
   }

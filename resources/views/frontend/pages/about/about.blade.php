@@ -5,9 +5,9 @@
         {{-- Existing mesh background utility --}}
         <div class="absolute inset-0 mesh-background"></div>
 
-        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-12 lg:px-8 lg:py-16">
             <!-- Course Title -->
-            <div class="max-w-4xl">
+            <div class="max-w-4xl animate-hero-left">
 
                 <span
                     class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
@@ -29,10 +29,10 @@
     </section>
 
     <!-- OUR MISSION ,Vision AND VALUES -->
-    <section class="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
+    <section class="relative overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
         <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {{-- Section Heading --}}
-            <div class="mx-auto mb-10 max-w-2xl text-center sm:mb-14">
+            <div class="mx-auto mb-10 max-w-2xl text-center sm:mb-14 reveal">
                 <div
                     class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-600 shadow-sm">
                     <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>
@@ -51,10 +51,10 @@
             </div>
 
             {{-- Foundation Cards --}}
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6 stagger">
                 {{-- Mission --}}
                 <article
-                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl sm:p-8">
+                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl sm:p-8 reveal-scale">
 
                     {{-- Background Glow --}}
                     <div
@@ -116,7 +116,7 @@
 
                 {{-- Vision --}}
                 <article
-                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:p-8">
+                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:p-8 reveal-scale">
                     {{-- Background Glow --}}
                     <div
                         class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-sky-50 opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100">
@@ -180,7 +180,7 @@
 
                 {{-- Values --}}
                 <article
-                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-xl sm:p-8">
+                    class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-xl sm:p-8 reveal-scale">
                     {{-- Background Glow --}}
                     <div
                         class="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-50 opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100">
@@ -246,7 +246,7 @@
 
     </section>
 
-    <section class="relative overflow-hidden bg-slate-950 py-20 text-white sm:py-24 lg:py-28">
+    <section class="relative overflow-hidden bg-slate-950 py-14 text-white sm:py-16 lg:py-20">
 
 
         {{-- Background accents --}}
@@ -263,7 +263,7 @@
 
 
                 {{-- Left Content --}}
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5 reveal-left">
 
                     <div
                         class="mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-400">
@@ -322,10 +322,10 @@
                 {{-- Right Features --}}
                 <div class="lg:col-span-7">
 
-                    <div class="divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.03] px-5 sm:px-7">
+                    <div class="divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.03] px-5 sm:px-7 stagger">
 
                         {{-- Item 01 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
+                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
 
                             <div class="shrink-0">
                                 <span
@@ -355,7 +355,7 @@
 
 
                         {{-- Item 02 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
+                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
 
                             <div class="shrink-0">
                                 <span
@@ -378,7 +378,7 @@
 
 
                         {{-- Item 03 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
+                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
 
                             <div class="shrink-0">
                                 <span
@@ -401,7 +401,7 @@
 
 
                         {{-- Item 04 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
+                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8 reveal">
 
                             <div class="shrink-0">
                                 <span

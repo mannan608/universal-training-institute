@@ -112,3 +112,59 @@ document.addEventListener('DOMContentLoaded', function () {
 
     swiperTargets.forEach((el) => observer.observe(el));
 });
+
+// Lightweight, Production-Ready Scroll Reveal Engine
+function initScrollReveals() {
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    if (!revealElements.length) return;
+
+    // Respect reduced-motion preference
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        revealElements.forEach(el => el.classList.add('is-revealed'));
+        return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+        revealElements.forEach(el => el.classList.add('is-revealed'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-revealed');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.08
+    });
+
+    revealElements.forEach(el => {
+        // If element is already in viewport on load/refresh, reveal immediately
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('is-revealed');
+        } else {
+            observer.observe(el);
+        }
+    });
+
+    // Failsafe timeout: ensure no element remains hidden under slow or blocked observer conditions
+    setTimeout(() => {
+        document.querySelectorAll('.reveal:not(.is-revealed), .reveal-left:not(.is-revealed), .reveal-right:not(.is-revealed), .reveal-scale:not(.is-revealed)').forEach(el => {
+            el.classList.add('is-revealed');
+        });
+    }, 3500);
+}
+
+window.initScrollReveals = initScrollReveals;
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveals);
+} else {
+    initScrollReveals();
+}
+

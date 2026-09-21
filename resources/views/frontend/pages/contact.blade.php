@@ -2,18 +2,18 @@
 
 @section('content')
 
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden py-10 md:py-14 lg:py-18">
     <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">    
 
 
         <!-- Main Content -->
-        <div class="mt-6 grid grid-cols-1 gap-8 md:mt-10 lg:mt-14 lg:grid-cols-[1fr_560px] lg:gap-12">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_560px] lg:gap-12">
 
             <!-- Left Content -->
             <div class="flex flex-col justify-center">
 
                 <!-- Intro -->
-                <div class="max-w-2xl">
+                <div class="max-w-2xl reveal-left">
                     <span class="text-sm font-semibold uppercase tracking-wider text-brand-500">
                         Let's Talk
                     </span>
@@ -31,11 +31,11 @@
 
 
                 <!-- Contact Information -->
-                <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 stagger">
 
                     <!-- Email -->
                     <div
-                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg reveal-scale">
 
                         <div class="flex items-start gap-4">
                             <div
@@ -69,7 +69,7 @@
 
                     <!-- Phone -->
                     <div
-                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg reveal-scale">
 
                         <div class="flex items-start gap-4">
                             <div
@@ -115,7 +115,7 @@
 
                     <!-- Location -->
                     <div
-                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg reveal-scale">
 
                         <div class="flex items-start gap-4">
                             <div
@@ -149,7 +149,7 @@
 
                     <!-- Working Hours -->
                     <div
-                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg reveal-scale">
 
                         <div class="flex items-start gap-4">
                             <div
@@ -185,7 +185,7 @@
 
                 <!-- Bottom Highlight -->
                 <div
-                    class="mt-8 flex items-center gap-4 rounded-2xl border border-brand-500/10 bg-brand-500/5 p-4 lg:p-5">
+                    class="mt-8 flex items-center gap-4 rounded-2xl border border-brand-500/10 bg-brand-500/5 p-4 lg:p-5 reveal">
 
                     <div
                         class="flex h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
@@ -217,7 +217,7 @@
 
 
             <!-- Contact Form -->
-            <div id="get-in-touch-form" class="relative mt-0 md:mt-8 lg:mt-10">
+            <div id="get-in-touch-form" class="relative mt-0 md:mt-8 lg:mt-10 reveal-right">
 
                 <!-- Decorative background -->
                 <div

@@ -17,7 +17,7 @@
                     <div class="flex flex-col gap-5">
 
                         {{-- Regulatory badges --}}
-                        <div class="flex flex-wrap items-center gap-2">
+                        <div class="flex flex-wrap items-center gap-2 animate-hero-left hero-stagger-1">
 
                             <span
                                 class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-25">
@@ -39,7 +39,7 @@
 
 
                         {{-- Main headline --}}
-                        <div class="flex flex-col gap-2 pt-1">
+                        <div class="flex flex-col gap-2 pt-1 animate-hero-left hero-stagger-2">
 
                             <h1
                                 class="font-display text-4xl font-extrabold uppercase leading-[1.04] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
@@ -63,7 +63,7 @@
 
 
                         {{-- Hero description --}}
-                        <p class="max-w-2xl pt-1 text-base leading-7 text-neutral-600 md:text-lg md:leading-8 max-w-xl">
+                        <p class="max-w-2xl pt-1 text-base leading-7 text-neutral-600 md:text-lg md:leading-8 max-w-xl animate-hero-left hero-stagger-3">
 
                             Universal Training Institute trains tomorrow's tradies, carers, technicians and leaders —
                             with hands-on courses, expert assessors and pathways into real Australian jobs.
@@ -78,7 +78,7 @@
                 ================================================== --}}
                     <div class="flex flex-col gap-7 pt-8 lg:pt-12">
 
-                        <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                        <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap animate-hero-left hero-stagger-4">
 
                             {{-- Primary CTA --}}
                             <a href="{{ route('courses.index') }}"
@@ -109,7 +109,7 @@
 
 
                         {{-- Trust indicators --}}
-                        <div class="grid w-full max-w-2xl grid-cols-1 gap-5 border-t border-brand-200 pt-6 sm:grid-cols-2">
+                        <div class="grid w-full max-w-2xl grid-cols-1 gap-5 border-t border-brand-200 pt-6 sm:grid-cols-2 animate-hero-left hero-stagger-5">
 
                             <div class="flex items-start gap-3">
 
@@ -163,7 +163,7 @@
                 HERO VISUAL
             ===================================================== --}}
                 <div
-                    class="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:col-span-5">
+                    class="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:col-span-5 animate-hero-right">
 
                     {{-- Browser-style header --}}
                     <div class="flex items-center justify-between border-b border-neutral-200 bg-neutral-50 px-4 py-3">
@@ -238,16 +238,16 @@
 
     </section>
     {{-- STATISTICS --}}
-    <section class="w-full bg-neutral-25 py-14 md:py-18 lg:py-24">
+    <section class="w-full bg-neutral-25 py-10 md:py-12 lg:py-14">
 
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 stagger">
 
 
                 {{-- Accreditation --}}
                 <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
@@ -280,7 +280,7 @@
 
                 {{-- Location --}}
                 <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
@@ -313,7 +313,7 @@
 
                 {{-- Industry --}}
                 <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
@@ -346,7 +346,7 @@
 
                 {{-- Visa --}}
                 <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
 
                     <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
 
@@ -386,12 +386,12 @@
 
 
     {{-- ACADEMIC DISCIPLINES --}}
-    <section class="mt-8 bg-brand-100 py-14 md:mt-12 md:py-18 lg:mt-16 lg:py-24">
+    <section class="bg-brand-100 py-12 md:py-14 lg:py-18">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end">
 
-                <div>
+                <div class="reveal">
 
                     <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
                         01 Academic Disciplines
@@ -406,7 +406,7 @@
 
 
                 <a href="{{ route('courses.index') }}"
-                    class="inline-flex items-center gap-1.5 self-start  text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
+                    class="reveal delay-150 inline-flex items-center gap-1.5 self-start  text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
 
                     All Disciplines
 
@@ -419,12 +419,12 @@
             </div>
 
 
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 stagger">
 
                 {{-- Card 1 --}}
                 @foreach ($categories as $category)
                     <div onclick="window.location.href='{{ route('category-courses', ['categoryslug' => $category['slug']]) }}'"
-                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg cursor-pointer">
+                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg cursor-pointer reveal-scale">
 
                         <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
 
@@ -508,13 +508,13 @@
     </section>
 
     {{-- MOST-ENROLLED QUALIFICATIONS --}}
-    <section id="courses" class="w-full bg-neutral-50 py-14 md:py-18 lg:py-24">
+    <section id="courses" class="w-full bg-neutral-50 py-12 md:py-14 lg:py-18">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div
                 class="mb-8 flex flex-col justify-between gap-5 border-b border-neutral-200 pb-5 md:flex-row md:items-end">
 
-                <div>
+                <div class="reveal">
 
                     <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
                         02 Intake Selection 2025
@@ -532,7 +532,7 @@
                 </div>
 
 
-                <div class="flex flex-wrap items-center gap-2">
+                <div class="flex flex-wrap items-center gap-2 reveal delay-100">
 
                     <span
                         class="rounded-lg border border-neutral-200 bg-neutral-25 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-700">
@@ -547,11 +547,11 @@
                 </div>
 
             </div>
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6 stagger">
 
                 @foreach ($courses as $course)
                 <div onclick="window.location.href='{{ route('course.show', ['courseslug' => $course['slug']]) }}'"
-                    class="flex cursor-pointer flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="flex cursor-pointer flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg reveal-scale">
 
                     <div class="flex flex-col gap-4">
 
@@ -649,9 +649,9 @@
     </section>
 
     {{-- PROSPECTUS / LEAD CAPTURE --}}
-    <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 md:py-18 lg:px-8 lg:py-24">
+    <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 md:py-14 lg:px-8 lg:py-18">
         <div
-            class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12">
+            class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12 reveal">
             {{--  LEFT CONTENT --}}
             <div class="flex flex-col justify-between gap-8 bg-brand-50 p-6 md:p-10 lg:col-span-7">
 
@@ -886,8 +886,8 @@
     </section>
 
     {{-- ADMISSIONS CTA --}}
-    <section class="w-full   md:py-18 lg:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-brand-800 py-14 text-neutral-25 rounded-2xl lg:rounded-4xl">
+    <section class="w-full py-8 md:py-12 lg:py-16">
+        <div class="mx-auto max-w-7xl px-6 py-10 sm:px-8 sm:py-12 lg:px-10 lg:py-14 bg-brand-800 text-neutral-25 rounded-2xl lg:rounded-3xl reveal-scale">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
 

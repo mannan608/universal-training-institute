@@ -78,8 +78,9 @@
         });
     </script>
 
-    <!-- Apply dark mode immediately to prevent flash -->
+    <!-- Apply dark mode and JS class immediately to prevent flash -->
     <script>
+        document.documentElement.classList.add('js');
         (function() {
             const savedTheme = localStorage.getItem('theme');
             const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -99,7 +100,7 @@
     @include('frontend.layouts.navbar')
 
     <main class="grow">
-       <div class="pt-18 md:pt-20 pb-12">
+       <div class="pt-18 md:pt-20 pb-0">
          @yield('content')
        </div>
     </main>

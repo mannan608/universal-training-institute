@@ -8,9 +8,9 @@
         {{-- Existing mesh background utility --}}
         <div class="absolute inset-0 mesh-background"></div>
 
-        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-12 lg:px-8 lg:py-16">
             <!-- Course Title -->
-            <div class="mb-10 max-w-4xl sm:mb-12">
+            <div class="mb-10 max-w-4xl sm:mb-12 animate-hero-left">
 
                 <span
                     class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
@@ -31,7 +31,7 @@
             </div>
 
             <!-- Actions -->
-            <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+            <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center animate-hero-left hero-stagger-2">
 
                 <a href="#admissions-form"
                     class="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-700 bg-brand-500 px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-theme-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md active:translate-y-0">
@@ -47,11 +47,11 @@
         </div>
     </section>
     {{-- ACADEMIC DISCIPLINES--}}
-<section class="py-12 md:py-16 lg:py-20">
+<section class="py-12 md:py-14 lg:py-18">
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end">
+        <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end reveal">
 
             <div>
 
@@ -70,14 +70,14 @@
         </div>
 
 
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 stagger">
 
 
           @foreach ($courses as $course )
               
          
             <div
-                class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
+                class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg reveal-scale">
 
                 <div
                     class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">

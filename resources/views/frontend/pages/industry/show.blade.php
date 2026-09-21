@@ -8,7 +8,7 @@
         <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <!-- Top Navigation -->
-            <div class="mb-6 flex flex-wrap items-center justify-between gap-4 sm:mb-8">
+            <div class="mb-6 flex flex-wrap items-center justify-between gap-4 sm:mb-8 animate-hero-left hero-stagger-1">
                 <div class="flex flex-wrap items-center gap-2">
 
                     <span
@@ -26,7 +26,7 @@
 
 
             <!-- Course Title -->
-            <div class="mb-10 max-w-4xl sm:mb-12">
+            <div class="mb-10 max-w-4xl sm:mb-12 animate-hero-left hero-stagger-2">
 
                 <span class="mb-3 inline-block  text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
                     01 Specification &amp; Outcomes
@@ -49,11 +49,11 @@
                 </p>
             </div>
             <!-- Quick Facts -->
-            <div id="quick-facts" class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4">
+            <div id="quick-facts" class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 stagger">
 
                 <!-- Duration -->
                 <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
+                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
                     <div
                         class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,7 +73,7 @@
                 </div>
                 <!-- Total Units -->
                 <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
+                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
                     <div
                         class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@
                 </div>
                 <!-- Study Load -->
                 <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
+                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
                     <div
                         class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@
                 </div>
                 <!-- CRICOS -->
                 <div
-                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5">
+                    class="group rounded-2xl border border-neutral-200/80 bg-white p-4 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-md sm:p-5 reveal-scale">
                     <div
                         class="mb-2 flex items-center gap-1.5  text-[10px] font-semibold uppercase tracking-wider text-brand-500">
                         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,7 +137,7 @@
                 </div>
             </div>
             <!-- Actions -->
-            <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+            <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center animate-hero-left hero-stagger-3">
 
                 <a href="#admissions-form"
                     class="inline-flex items-center justify-center gap-2 rounded-xl  bg-brand-500 px-5 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-theme-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md active:translate-y-0">
@@ -176,7 +176,7 @@
         </div>
     </section>
 
-    <main class="mx-auto max-w-7xl flex-1 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <main class="mx-auto max-w-7xl flex-1 px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 
         <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-10">
 

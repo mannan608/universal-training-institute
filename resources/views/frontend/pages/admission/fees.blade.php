@@ -15,31 +15,31 @@
             class="pointer-events-none absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-secondary-500/10 blur-3xl sm:h-96 sm:w-96">
         </div>
 
-        <div class="relative mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20 xl:py-24">
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 
             <div class="max-w-4xl">
 
                 {{-- Eyebrow --}}
                 <span
-                    class="mb-3 inline-flex items-center rounded-full border border-secondary-200 bg-secondary-50 px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-700 sm:text-xs">
+                    class="animate-hero-left hero-stagger-1 mb-3 inline-flex items-center rounded-full border border-secondary-200 bg-secondary-50 px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-700 sm:text-xs">
                     fees
                 </span>
 
                 {{-- Heading --}}
                 <h1
-                    class="max-w-4xl font-heading text-3xl font-bold leading-[1.08] tracking-tight text-neutral-950 sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.25rem]">
+                    class="animate-hero-left hero-stagger-2 max-w-4xl font-heading text-3xl font-bold leading-[1.08] tracking-tight text-neutral-950 sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.25rem]">
                     Fees and charges
                 </h1>
 
                 {{-- Description --}}
                 <p
-                    class="mt-5 max-w-2xl text-sm leading-6 text-neutral-600 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
+                    class="animate-hero-left hero-stagger-3 mt-5 max-w-2xl text-sm leading-6 text-neutral-600 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
                     A clear schedule of UTI tuition, administrative and student service fees. All fees are in Australian
                     Dollars (AUD).
                 </p>
 
                 {{-- CTA --}}
-                <div class="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center">
+                <div class="animate-hero-left hero-stagger-4 mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center">
 
                     <a href="#apply"
                         class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3.5 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-theme-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md active:translate-y-0 sm:w-auto">
@@ -57,14 +57,14 @@
         </div>
     </section>
     <section class="w-full bg-slate-50/60">
-        <div class="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+        <div class="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 
-            <div class="space-y-12 sm:space-y-16 lg:space-y-20">
+            <div class="space-y-10 sm:space-y-12 lg:space-y-16">
 
                 {{-- =========================================================
                 COURSE FEES INTRO
             ========================================================== --}}
-                <section>
+                <section class="reveal">
                     <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
 
                         <div class="grid grid-cols-1 lg:grid-cols-12">
@@ -163,7 +163,7 @@
                 <section>
 
                     {{-- Section Header --}}
-                    <div class="mb-8 sm:mb-10 lg:mb-12">
+                    <div class="reveal mb-8 sm:mb-10 lg:mb-12">
 
                         <div class="mb-4 flex items-center gap-3">
                             <span class="h-px w-8 bg-brand-500"></span>
@@ -214,11 +214,11 @@
                         {{-- =================================================
                         ENROLMENT + REASSESSMENT
                     ================================================== --}}
-                        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+                        <div class="stagger grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
 
                             {{-- Enrolment --}}
                             <div
-                                class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
+                                class="reveal-scale overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
 
                                 {{-- Card Header --}}
                                 <div
@@ -306,7 +306,7 @@
 
                             {{-- Reassessment --}}
                             <div
-                                class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
+                                class="reveal-scale overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
 
                                 <div
                                     class="border-b border-slate-100 bg-gradient-to-r from-brand-50 to-white px-5 py-5 sm:px-6">
@@ -324,7 +324,7 @@
 
                                         <div class="min-w-0">
                                             <h3 class="font-display text-base font-bold text-slate-900 sm:text-lg">
-                                                Reassessment &amp; Late Fees
+                                                 Reassessment &amp; Late Fees
                                             </h3>
 
                                             <p class="mt-1 text-xs leading-5 text-slate-500">
@@ -383,7 +383,7 @@
                         {{-- =================================================
                         GENERAL DOCUMENTS
                     ================================================== --}}
-                        <div>
+                        <div class="reveal">
 
                             <div class="mb-5 flex items-center gap-3 sm:mb-6">
 
@@ -478,13 +478,13 @@
                         {{-- =================================================
                         PRINTING + REFUND
                     ================================================== --}}
-                        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+                        <div class="stagger grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
 
                             {{-- Printing --}}
 
 
                             <div
-                                class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
+                                class="reveal-scale overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-lg">
 
                                 {{-- Card Header --}}
                                 <div
@@ -551,7 +551,7 @@
 
                             {{-- Refund Fees --}}
 
-                            <div>
+                            <div class="reveal-scale">
 
 
                                 <div
@@ -673,7 +673,7 @@
                 {{-- =========================================================
                 BANK ACCOUNT DETAILS
             ========================================================== --}}
-                <section>
+                <section class="reveal">
 
                     <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
 
