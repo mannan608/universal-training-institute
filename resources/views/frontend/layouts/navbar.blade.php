@@ -1,7 +1,18 @@
-    @php
-        $categories = json_decode(file_get_contents(resource_path('data/categories.json')), true);
-        // @dd($categories);
-    @endphp
+ @php
+    $categories = json_decode(
+        file_get_contents(resource_path('data/categories.json')),
+        true
+    );
+
+    $courses = json_decode(
+        file_get_contents(resource_path('data/courses.json')),
+        true
+    );
+
+    // Group courses by category slug
+    $coursesByCategory = collect($courses)->groupBy('category_slug');
+@endphp
+
     <header class="fixed top-0 left-0 w-full z-50 border-0 bg-white backdrop-blur-md dark:bg-neutral-900/95">
 
         <nav class="max-w-7xl mx-auto px-5 lg:px-8">
@@ -269,19 +280,60 @@
                         after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
                         International
                     </a>
-                    {{-- patners --}}
-                    <a href="{{ route('patners') }}"
-                        class="relative font-medium transition-all duration-300
-                        {{ request()->routeIs('patners') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
-                        after:absolute after:left-0 after:-bottom-1.5
-                        after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
+                    {{-- Students --}}
+
+
+                    <a href="#" id="studentHoverButton" data-dropdown-toggle="studentHover"
+                        data-dropdown-trigger="hover"
+                        class="flex items-center relative font-medium transition-all duration-300
+                            {{ request()->routeIs('') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
+                            after:absolute after:left-0 after:-bottom-1.5
+                            after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300"
+                        type="button">
                         Students
+                        <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m19 9-7 7-7-7" />
+                        </svg>
                     </a>
 
-                    {{-- contact --}}
-                    <a href="{{ route('contact') }}"
+                    <div id="studentHover" class="z-10 hidden top-full left-0 w-80 rounded-lg bg-white shadow-lg">
+                        <ul class="grid grid-cols-1 px-3 py-5 text-sm font-medium normal-case"
+                            aria-labelledby="studentHoverButton">
+
+                            <li class="max-w-[90%]">
+                                <a href="{{ route('student-support') }}"
+                                    class="block w-full rounded-md p-2 normal-case text-gray-700 transition-colors hover:bg-gray-100 hover:text-brand-600">
+                                    Student Support
+                                </a>
+                            </li>
+                            <li class="max-w-[90%]">
+                                <a href="{{ route('student-resources') }}"
+                                    class="block w-full rounded-md p-2 normal-case text-gray-700 transition-colors hover:bg-gray-100 hover:text-brand-600">
+                                    Student Resources
+                                </a>
+                            </li>
+                            <li class="max-w-[90%]">
+                                <a href="{{ route('admission-fees') }}"
+                                    class="block w-full rounded-md p-2 normal-case text-gray-700 transition-colors hover:bg-gray-100 hover:text-brand-600">
+                                    Fees & Charges
+                                </a>
+                            </li>
+                            <li class="max-w-[90%]">
+                                <a href="{{ route('faqs') }}"
+                                    class="block w-full rounded-md p-2 normal-case text-gray-700 transition-colors hover:bg-gray-100 hover:text-brand-600">
+                                   FAQ
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    {{-- Agents --}}
+                    <a href="{{ route('agent-register') }}"
                         class="relative font-medium transition-all duration-300
-                            {{ request()->routeIs('contact') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
+                            {{ request()->routeIs('agent-register') ? 'text-brand-600 font-medium after:w-full' : 'text-neutral-600 hover:text-brand-600 after:w-0 hover:after:w-full' }}
                             after:absolute after:left-0 after:-bottom-1.5
                             after:h-0.5 after:bg-brand-600 after:transition-all after:duration-300">
                         Agents
@@ -307,24 +359,23 @@
                 <a href="{{ route('about') }}"
                     class="{{ request()->routeIs('about') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">About
                     Us</a>
+                <a href="{{ route('courses.index') }}"
+                    class="{{ request()->routeIs('courses.index') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Our
+                    Courses</a>
+                <a href="{{ route('international') }}"
+                    class="{{ request()->routeIs('international') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">International
+                    Students</a>
                 <a href="#"
-                    class="{{ request()->routeIs('courses') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Courses</a>
-                <a href="#"
-                    class="{{ request()->routeIs('how-we-works') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">How
-                    It Works</a>
-                <a href="#"
-                    class="{{ request()->routeIs('patners') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Our
-                    Partners</a>
-                <a href="{{ route('contact') }}"
-                    class="{{ request()->routeIs('contact') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Contact
-                    Us</a>
+                    class="{{ request()->routeIs('patners') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Students</a>
+                <a href="{{ route('agent-register') }}"
+                    class="{{ request()->routeIs('agent-register') ? 'text-neutral-600 font-medium' : 'text-neutral-600' }}">Agents</a>
 
 
                 <div class="flex items-center justify-between mt-6">
 
                     <a href="{{ route('eligibility') }}"
                         class="text-sm uppercase bg-brand-600 text-white px-4 py-2 lg:px-6 lg:py-2.5 rounded-lg font-medium hover:bg-brand-600 transition">
-                        Check Your Eligibility
+                        Get In Touch
                     </a>
 
                 </div>

@@ -77,4 +77,19 @@ class FrontendController extends Controller
     public function gsGuide(){
         return view('frontend.pages.international.gs-guide');
     }
+
+    public function agentRegister(){
+        return view('agent.register');
+    }
+
+     public function studentSupport(){
+        return view('frontend.pages.student-support.index');
+    }
+     public function studentResources(){
+        return view('frontend.pages.student-support.resources');
+    }
+
+     public function admissionFees(){
+        return view('frontend.pages.admission.fees');
+    }
 }

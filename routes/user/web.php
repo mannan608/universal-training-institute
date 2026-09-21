@@ -38,6 +38,11 @@ Route::get('/courses/{courseslug}', [IndustryController::class, 'show'])->name('
 Route::get('/international-inquiry', [FrontendController::class, 'internationalInquiry'])->name('international');
 Route::get('/gs-guide', [FrontendController::class, 'gsGuide'])->name('gs-guide');
 
+Route::get('/agent-register', [FrontendController::class, 'agentRegister'])->name('agent-register');
+Route::get('/student-support', [FrontendController::class, 'studentSupport'])->name('student-support');
+Route::get('/student-resources', [FrontendController::class, 'studentResources'])->name('student-resources');
+Route::get('/admission-fees', [FrontendController::class, 'admissionFees'])->name('admission-fees');
+
 
 Route::get('/check-eligibility', [CheckEligibilityController::class, 'index'])
     ->name('eligibility');

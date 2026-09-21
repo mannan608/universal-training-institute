@@ -1179,8 +1179,8 @@
     </section>
 
     {{-- ADMISSIONS CTA--}}
-    <section  class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section  class="w-full   md:py-18 lg:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-brand-800 py-14 text-neutral-25 rounded-2xl lg:rounded-4xl">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
 
