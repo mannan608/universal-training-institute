@@ -4,7 +4,7 @@
 
 @section('content')
     {{--  HERO SECTION --}}
-    <section class="relative isolate overflow-hidden bg-brand-25">
+    <section class="relative isolate overflow-hidden bg-brand-25 animate-hero-left">
         <div class="pointer-events-none absolute inset-0 mesh-background"></div>
 
         {{-- Decorative brand glow --}}

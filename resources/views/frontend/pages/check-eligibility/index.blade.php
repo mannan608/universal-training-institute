@@ -7,7 +7,7 @@
         }
     </style>
 
-    <div class="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:py-12" x-data="eligibilityForm()">
+    <div class="animate-hero-left mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:py-12" x-data="eligibilityForm()">
 
         <!-- =========================================================
                  FORM CARD

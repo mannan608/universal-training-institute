@@ -10,8 +10,7 @@
     {{-- =========================================================
         HERO / OVERVIEW
     ========================================================== --}}
-    <section id="overview"
-        class="relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-brand-900 via-slate-900 to-slate-950 px-5 py-8 text-white shadow-2xl sm:px-8 sm:py-10 lg:px-12 lg:py-14">
+    <section id="overview" class="relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-brand-900 via-slate-900 to-slate-950 px-5 py-8 text-white shadow-2xl sm:px-8 sm:py-10 lg:px-12 lg:py-14 animate-hero-left">
 
         {{-- Background Decorations --}}
         <div

@@ -3,7 +3,7 @@
 @section('title','International Students Guide')
 
 @section('content')
-    <section class="relative overflow-hidden bg-brand-25">
+    <section class="relative overflow-hidden bg-brand-25 animate-hero-left">
         <div class="absolute inset-0 mesh-background"></div>
 
         <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
@@ -33,11 +33,11 @@
             </div>
 
             {{-- Quick Facts --}}
-            <div id="quick-facts" class="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            <div id="quick-facts" class="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 stagger">
 
                 {{-- Fact 1 --}}
                 <div
-                    class="group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
+                    class="reveal-scale group rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg sm:p-5">
 
                     <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-500">
                         <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-500">

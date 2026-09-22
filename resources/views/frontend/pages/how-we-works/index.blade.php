@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <section class="relative py-16 lg:py-24 bg-gradient-to-b from-slate-50/50 via-white to-slate-50/50 overflow-hidden">
+    <section class="relative py-16 lg:py-24 bg-gradient-to-b from-slate-50/50 via-white to-slate-50/50 overflow-hidden animate-hero-left">
 
         <!-- Subtle Background Grid Pattern -->
         <div
@@ -10,7 +10,7 @@
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="space-y-3 max-w-3xl mx-auto flex items-center flex-col text-center justify-center mb-8">
+            <div class="space-y-3 max-w-3xl mx-auto flex items-center flex-col text-center justify-center mb-8 reveal">
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-xs font-semibold uppercase tracking-wider">
                     <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
